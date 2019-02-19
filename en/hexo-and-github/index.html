@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en,zh-CN,default">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/MyBlog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/MyBlog/css/main.css?v=7.0.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/MyBlog/images/apple-touch-icon-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/MyBlog/images/favicon-32x32-next.png?v=7.0.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/MyBlog/images/favicon-16x16-next.png?v=7.0.0">
+
+
+  <link rel="mask-icon" href="/MyBlog/images/logo.svg?v=7.0.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/MyBlog/',
+    scheme: 'Mist',
+    version: '7.0.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. It turns out that KaTeX+Hexo+GitHub is an appropriate combination for those who want to">
+<meta name="keywords" content="Hexo,GitHub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo and GitHub">
+<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/en/hexo-and-github/index.html">
+<meta property="og:site_name" content="Jun&#39;s Blog">
+<meta property="og:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. It turns out that KaTeX+Hexo+GitHub is an appropriate combination for those who want to">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-02-19T09:13:13.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo and GitHub">
+<meta name="twitter:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. It turns out that KaTeX+Hexo+GitHub is an appropriate combination for those who want to">
+
+
+
+
+
+
+  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/en/hexo-and-github/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo and GitHub | Jun's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/MyBlog/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Jun's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/MyBlog/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/MyBlog/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://jun-wang-2018.github.io/MyBlog/MyBlog/en/hexo-and-github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jun Wang">
+      <meta itemprop="description" content="How the world works?">
+      <meta itemprop="image" content="/MyBlog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jun's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo and GitHub<a href="https://github.com/Jun-Wang-2018/hexoBlog/published/_posts/en/2019-02-12-hexo-and-github.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pencil"></i></a>
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-12 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-12T00:00:00+08:00">2019-02-12</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-19 17:13:13" itemprop="dateModified" datetime="2019-02-19T17:13:13+08:00">2019-02-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/GitHub/" itemprop="url" rel="index"><span itemprop="name">GitHub</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>KaTeX is <a href="https://katex.org/" target="_blank" rel="noopener">the fastest math typesetting library for the web</a>. Hexo is <a href="https://hexo.io/" target="_blank" rel="noopener">a fast, simple &amp; powerful blog framework</a>. It turns out that KaTeX+Hexo+GitHub is an appropriate combination for those who want to build a Blog and write some equations in his/her posts. This post is about how to build your Hexo site on GitHub. The next post will discuss how to embed KaTeX.<br><a id="more"></a></p>
+<h2 id="1-Hexo"><a href="#1-Hexo" class="headerlink" title="1. Hexo"></a>1. Hexo</h2><h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="Setup-your-blog"><a href="#Setup-your-blog" class="headerlink" title="Setup your blog"></a>Setup your blog</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init hexoBlog</span><br><span class="line">$ cd hexoBlog</span><br></pre></td></tr></table></figure>
+<p>A directory <code>hexoBlog</code> is created and initialized. It’s the Hexo root directory where your hexo files stored.</p>
+<h3 id="Run-local-server"><a href="#Run-local-server" class="headerlink" title="Run local server"></a>Run local server</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>The output is:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure></p>
+<p>Open <code>http://localhost:4000</code> in your brower, you’ll see your initial site.</p>
+<p>More info: <a href="https://hexo.io/" target="_blank" rel="noopener">hexo.io</a>, <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo-github</a></p>
+<h2 id="2-Deploy-to-GitHub"><a href="#2-Deploy-to-GitHub" class="headerlink" title="2. Deploy to GitHub"></a>2. Deploy to GitHub</h2><h3 id="2-1-Create-a-new-empty-repository"><a href="#2-1-Create-a-new-empty-repository" class="headerlink" title="2.1 Create a new empty repository"></a>2.1 Create a new empty repository</h3><p>If you don’t have a GitHub account, create one. If you have a GitHub account, click <a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a> and create a new empty repository: Choose a name(say ‘hexoBlog’), and click <code>create repository</code>, leave everything else alone. On your new empty repository page, find the line begin with “git remote add origin…”. Copy this line and replace the following code(line 6) with it.</p>
+<h3 id="2-2-Connect-your-Hexo-to-GitHub"><a href="#2-2-Connect-your-Hexo-to-GitHub" class="headerlink" title="2.2. Connect your Hexo to GitHub"></a>2.2. Connect your Hexo to GitHub</h3><p>Make sure your current directory is <code>hexoBlog</code>, the Hexo root directory.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git</span><br><span class="line">$ git push origin gh-pages</span><br></pre></td></tr></table></figure></p>
+<h4 id="Alias-for-a-link"><a href="#Alias-for-a-link" class="headerlink" title="Alias for a link"></a>Alias for a link</h4><p>Line 6 means you give your link a alias “origin”. So if you want to push a branch to it, you don’t need to copy and paste this link like this:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git gh-pages</span><br></pre></td></tr></table></figure></p>
+<p>Of course, you can choose whatever alias you want. For example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add destination https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git</span><br><span class="line">$ git push destination gh-pages</span><br></pre></td></tr></table></figure></p>
+<h4 id="master-vs-gh-pages"><a href="#master-vs-gh-pages" class="headerlink" title="master vs. gh-pages"></a>master vs. gh-pages</h4><p>If you want to build your site on branch “master” instead of “gh-pages”, you can see <a href="https://hexo.io/docs/deployment" target="_blank" rel="noopener">hexo doc</a>. If you want to know the difference between gh-pages and master, click  <a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">here</a>.</p>
+<p>Refresh your empty repository, now you can see your hexo files are pushed there. Those are development files not site files. Your site is not deployed yet, there is still one more step to go. This is a vital difference between Hexo and Jekyll. If you use Jekyll, after you push your local Jekyll root repository to GitHub, your site is deployed automatically.</p>
+<h3 id="2-3-Deploy-your-site"><a href="#2-3-Deploy-your-site" class="headerlink" title="2.3 Deploy your site"></a>2.3 Deploy your site</h3><p>Install <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>If it doesn’t work on your Mac, try adding <code>sudo</code> at the beginning. Once installed, find a file _config.yml in <code>hexoBlog</code>, your local hexo directory. Edit the following part:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure></p>
+<p>If you build your site on master, <code>branch: master</code>. Don’t forgget to save your changes. If you do not have Atom or Sublime, you may use command<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi _config.yml</span><br></pre></td></tr></table></figure></p>
+<p>After edittig, press ‘Esc’ and input <a href="https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor" target="_blank" rel="noopener"><code>:wq</code></a>. Once changes saved,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>If you want to generate before deployment:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure></p>
+<p>Go back to your GitHub repository “<a href="https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME&quot;" target="_blank" rel="noopener">https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME&quot;</a>, find <code>Settings</code> button and click it. Scroll down to the tag “GitHub Pages”, you will See<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your site is published at https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-CHOSEN-NAME/</span><br></pre></td></tr></table></figure></p>
+<p>Click the link and you will see your deployed site.</p>
+<h2 id="3-One-more-thing"><a href="#3-One-more-thing" class="headerlink" title="3. One more thing"></a>3. One more thing</h2><p>Now your “hexoBlog” repository on GitHub is your deployed site. Where are your previously pushed Hexo files? They are covered by your site files. If you want to keep these Hexo files therefore keep track of your develpment, you need to create another repository on GitHub.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">Before you do anything, please backup your local Hexo root repository. Save it somewhere else. Just in case.</span><br></pre></td></tr></table></figure></p>
+<h3 id="Create-another-empty-repository-on-GitHub"><a href="#Create-another-empty-repository-on-GitHub" class="headerlink" title="Create another empty repository on GitHub"></a>Create another empty repository on GitHub</h3><p>Click <a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a> and create a new empty repository: Choose a name(say ‘Hexo’) and click <code>create repository</code>, leave everything else alone. On your new empty repository page, find the line begin with “git remote add origin…”. Copy this line and substitute the following code(line 6) with it. And replace “origin” with “another-origin”.</p>
+<h3 id="Reconnect-your-Hexo-to-GitHub"><a href="#Reconnect-your-Hexo-to-GitHub" class="headerlink" title="Reconnect your Hexo to GitHub"></a>Reconnect your Hexo to GitHub</h3><p>Note: Line 6 is different from the last time. Make sure you create <code>another-origin</code> and the link is https://…./YOUR-NEW-REPOSITORY.git. In my case, it’s https://…./Hexo.git, which is different from the former one https://…./hexoBlog.git. Line 7 is also different.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add another-origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-NEW-REPOSITORY.git</span><br><span class="line">$ git push another-origin gh-pages</span><br></pre></td></tr></table></figure></p>
+<p>Refresh your GitHub Hexo repository, now you’ll see folders like scaffolds, source, themes, etc. If everything goes well, you can <a href="https://stackoverflow.com/questions/1221840/remote-origin-already-exists-on-git-push-to-a-new-repository" target="_blank" rel="noopener">remove the old “origin”</a>.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure></p>
+<p>Done! It’s time to enjoy what we’ve done.</p>
+<h3 id="Sever-Deploy-and-Push"><a href="#Sever-Deploy-and-Push" class="headerlink" title="Sever, Deploy and Push"></a>Sever, Deploy and Push</h3><h4 id="Run-local-server-1"><a href="#Run-local-server-1" class="headerlink" title="Run local server"></a>Run local server</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>Open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in your brower, you’ll see your site on your machine.</p>
+<h4 id="Generate-and-Deploy"><a href="#Generate-and-Deploy" class="headerlink" title="Generate and Deploy"></a>Generate and Deploy</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
+<p>Refresh your deployed site on GitHub, if you’ve made some changes, you’ll see they are updated.</p>
+<h3 id="Push"><a href="#Push" class="headerlink" title="Push"></a>Push</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br></pre></td></tr></table></figure>
+<p>Check your GitHub Hexo repository, there are folders like scaffolds, source, themes, etc. While in your GitHub hexoBlog repository, there are folders like archives, categories, css, etc.</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/MyBlog/tags/Hexo/" rel="tag"># Hexo</a>
+          
+            <a href="/MyBlog/tags/GitHub/" rel="tag"># GitHub</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/MyBlog/en/from-jekyll-to-hexo/" rel="next" title="From Jekyll To Hexo">
+                <i class="fa fa-chevron-left"></i> From Jekyll To Hexo
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/MyBlog/en/hexo-hello-world/" rel="prev" title="Hexo Hello World">
+                Hexo Hello World <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/MyBlog/images/avatar.gif" alt="Jun Wang">
+            
+              <p class="site-author-name" itemprop="name">Jun Wang</p>
+              <p class="site-description motion-element" itemprop="description">How the world works?</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/MyBlog/archives/">
+                
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">categories</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:yourname@gmail.com" title="E-Mail &rarr; mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://example.com" title="http://example.com" rel="noopener" target="_blank">Title</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-Hexo"><span class="nav-text">1. Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Installation"><span class="nav-text">Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Setup-your-blog"><span class="nav-text">Setup your blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-local-server"><span class="nav-text">Run local server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Deploy-to-GitHub"><span class="nav-text">2. Deploy to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Create-a-new-empty-repository"><span class="nav-text">2.1 Create a new empty repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-Connect-your-Hexo-to-GitHub"><span class="nav-text">2.2. Connect your Hexo to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Alias-for-a-link"><span class="nav-text">Alias for a link</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#master-vs-gh-pages"><span class="nav-text">master vs. gh-pages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-Deploy-your-site"><span class="nav-text">2.3 Deploy your site</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-One-more-thing"><span class="nav-text">3. One more thing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-another-empty-repository-on-GitHub"><span class="nav-text">Create another empty repository on GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reconnect-your-Hexo-to-GitHub"><span class="nav-text">Reconnect your Hexo to GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sever-Deploy-and-Push"><span class="nav-text">Sever, Deploy and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Run-local-server-1"><span class="nav-text">Run local server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Generate-and-Deploy"><span class="nav-text">Generate and Deploy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Push"><span class="nav-text">Push</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jun Wang</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.0.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/MyBlog/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/MyBlog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/MyBlog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/MyBlog/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/MyBlog/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/MyBlog/js/src/schemes/muse.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/MyBlog/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/MyBlog/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/MyBlog/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+
+
+    
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('Copy').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var range = document.createRange(); //For Chrome
+        var sel = window.getSelection(); //For Chrome
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; //Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.value = code;
+        ta.textContent = code; //For FireFox
+        ta.contentEditable = true;
+        ta.readOnly = false;
+        document.body.appendChild(ta);
+        range.selectNode(ta);
+        sel.removeAllRanges();
+        sel.addRange(range);
+        ta.setSelectionRange(0, code.length);
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('Copied');
+          else $(this).text('Copy failed');
+        
+        ta.blur(); //For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('Copy');
+        }, 300);
+      }).append(e);
+    })
+  </script>
+
+
+</body>
+</html>
