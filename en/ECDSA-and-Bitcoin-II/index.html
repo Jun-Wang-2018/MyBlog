@@ -109,15 +109,15 @@
   <meta name="description" content="In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind secp256k1, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it">
 <meta name="keywords" content="secp256k1,Bitcoin parameters">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ECDSA and Bitcoin II: Elliptic Curve and Private Key">
+<meta property="og:title" content="ECDSA and Bitcoin II: Base Point, Order and secp256k1">
 <meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/index.html">
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind secp256k1, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/basepoints.png">
-<meta property="og:updated_time" content="2019-02-19T18:51:42.879Z">
+<meta property="og:updated_time" content="2019-02-20T16:32:00.256Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ECDSA and Bitcoin II: Elliptic Curve and Private Key">
+<meta name="twitter:title" content="ECDSA and Bitcoin II: Base Point, Order and secp256k1">
 <meta name="twitter:description" content="In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind secp256k1, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it">
 <meta name="twitter:image" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/basepoints.png">
 
@@ -138,7 +138,7 @@
   };
 </script>
 
-  <title>ECDSA and Bitcoin II: Elliptic Curve and Private Key | Jun's Blog</title>
+  <title>ECDSA and Bitcoin II: Base Point, Order and secp256k1 | Jun's Blog</title>
   
 
 
@@ -391,7 +391,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ECDSA and Bitcoin II: Elliptic Curve and Private Key
+          <h1 class="post-title" itemprop="name headline">ECDSA and Bitcoin II: Base Point, Order and secp256k1
 
               
             
@@ -434,7 +434,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-20 02:51:42" itemprop="dateModified" datetime="2019-02-20T02:51:42+08:00">2019-02-20</time>
+                <time title="Modified: 2019-02-21 00:32:00" itemprop="dateModified" datetime="2019-02-21T00:32:00+08:00">2019-02-21</time>
               
             
           </span>
@@ -451,21 +451,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/Bitcoin/" itemprop="url" rel="index"><span itemprop="name">Bitcoin</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a></span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/Math/" itemprop="url" rel="index"><span itemprop="name">Math</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/MyBlog/categories/ECDSA-and-Bitcoin/" itemprop="url" rel="index"><span itemprop="name">ECDSA and Bitcoin</span></a></span>
 
                 
                 
@@ -889,7 +875,15 @@ Reference:<br>
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -1173,7 +1167,7 @@ Reference:<br>
   var disqus_config = function() {
     this.page.url = "https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/";
     this.page.identifier = "en/ECDSA-and-Bitcoin-II/";
-    this.page.title = 'ECDSA and Bitcoin II: Elliptic Curve and Private Key';
+    this.page.title = 'ECDSA and Bitcoin II: Base Point, Order and secp256k1';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
@@ -1585,13 +1579,13 @@ Reference:<br>
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = 'ECDSA and Bitcoin II: Elliptic Curve and Private Key'.length > 0
+      var isPost = 'ECDSA and Bitcoin II: Base Point, Order and secp256k1'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
       var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = 'ECDSA and Bitcoin II: Elliptic Curve and Private Key'
+        var title = 'ECDSA and Bitcoin II: Base Point, Order and secp256k1'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))

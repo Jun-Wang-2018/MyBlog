@@ -109,7 +109,7 @@
   <meta name="description" content="How the world works?">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Jun&#39;s Blog">
-<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/categories/GitHub/index.html">
+<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/tags/Hello-World/index.html">
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="How the world works?">
 <meta property="og:locale" content="en">
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/categories/GitHub/">
+  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/tags/Hello-World/">
 
 
 
@@ -134,7 +134,7 @@
   };
 </script>
 
-  <title>Category: GitHub | Jun's Blog</title>
+  <title>Tag: Hello World | Jun's Blog</title>
   
 
 
@@ -262,7 +262,7 @@
         
         
           
-          <li class="menu-item menu-item-categories menu-item-active">
+          <li class="menu-item menu-item-categories">
 
     
     
@@ -279,7 +279,7 @@
         
         
           
-          <li class="menu-item menu-item-tags">
+          <li class="menu-item menu-item-tags menu-item-active">
 
     
     
@@ -376,11 +376,11 @@
   
   
   
-  <div class="post-block category">
+  <div class="post-block tag">
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>GitHub<small>Category</small>
+        <h1>Hello World<small>Tag</small>
         </h1>
       </div>
 
@@ -392,17 +392,43 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/MyBlog/en/hexo-and-github/" itemprop="url">
+          <a class="post-title-link" href="/MyBlog/zh-CN/Hello-World/" itemprop="url">
             
-              <span itemprop="name">Hexo and GitHub</span>
+              <span itemprop="name">Hello World 世界，你好！</span>
             
           </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-12T00:00:00+08:00" content="2019-02-12">
-          02-12
+        <time class="post-time" itemprop="dateCreated" datetime="2019-02-20T15:09:13+08:00" content="2019-02-20">
+          02-20
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+      
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/MyBlog/en/hexo-hello-world/" itemprop="url">
+            
+              <span itemprop="name">Hexo Hello World</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-02-13T00:00:00+08:00" content="2019-02-13">
+          02-13
         </time>
       </div>
 
@@ -419,7 +445,6 @@
   
 
   
-
 
 
           </div>
@@ -1182,8 +1207,8 @@
       //https://hexo.io/docs/variables.html
       var isPost = ''.length > 0
       var isArchive = '' === 'true'
-      var isCategory = 'GitHub'.length > 0
-      var isTag = ''.length > 0
+      var isCategory = ''.length > 0
+      var isTag = 'Hello World'.length > 0
 
       if (isPost) { //is article page
         var title = ''
@@ -1194,7 +1219,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Hexo and GitHub");' //if you have a better way to get titles of posts, please change it
+        var postsstr = 'titles.push("Hello World 世界，你好！");titles.push("Hexo Hello World");' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
