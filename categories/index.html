@@ -98,13 +98,14 @@
 
   <meta name="description" content="How the world works?">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Jun&#39;s Blog">
-<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/tags/GitHub/index.html">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/categories/index.html">
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="How the world works?">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-02-16T12:46:26.116Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jun&#39;s Blog">
+<meta name="twitter:title" content="tags">
 <meta name="twitter:description" content="How the world works?">
 
 
@@ -112,7 +113,7 @@
 
 
 
-  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/tags/GitHub/">
+  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/categories/">
 
 
 
@@ -122,7 +123,7 @@
   };
 </script>
 
-  <title>Tag: GitHub | Jun's Blog</title>
+  <title>tags | Jun's Blog</title>
   
 
 
@@ -170,7 +171,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left ">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -242,7 +243,7 @@
         
         
           
-          <li class="menu-item menu-item-categories">
+          <li class="menu-item menu-item-categories menu-item-active">
 
     
     
@@ -259,7 +260,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -353,52 +354,85 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>GitHub<small>Tag</small>
-        </h1>
-      </div>
+<h1 class="post-title" itemprop="name headline">tags
+
+</h1>
+
+<div class="post-meta">
+  
+  
+
+
+
+</div>
+
+</header>
 
       
+      
+      
+      <div class="post-body">
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-          <a class="post-title-link" href="/MyBlog/en/hexo-and-github/" itemprop="url">
-            
-              <span itemprop="name">Hexo and GitHub</span>
-            
-          </a>
+          <div class="category-all-page">
+            <div class="category-all-title">
+              
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+              7 categories in total
+            </div>
+            <div class="category-all">
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/Bitcoin/">Bitcoin</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/GitHub/">GitHub</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/Hexo/">Hexo</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/Jekyll/">Jekyll</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/KaTeX/">KaTeX</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/Math/">Math</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/MyBlog/categories/Python/">Python</a><span class="category-list-count">2</span></li></ul>
+            </div>
+          </div>
         
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-02-12T00:00:00+08:00" content="2019-02-12">
-          02-12
-        </time>
       </div>
-
-    </header>
-  </article>
-
-
+      
+      
       
     </div>
+    
 
+
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
 
 
           </div>
@@ -734,6 +768,10 @@
 
 
   
+  <script src="/MyBlog/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/MyBlog/js/src/post-details.js?v=7.0.0"></script>
+
+
 
   
 
@@ -1144,13 +1182,13 @@
       var articles = db.collection('articles')
 
       //https://hexo.io/docs/variables.html
-      var isPost = ''.length > 0
+      var isPost = 'tags'.length > 0
       var isArchive = '' === 'true'
       var isCategory = ''.length > 0
-      var isTag = 'GitHub'.length > 0
+      var isTag = ''.length > 0
 
       if (isPost) { //is article page
-        var title = ''
+        var title = 'tags'
         var doc = articles.doc(title)
 
         getCount(doc, true).then(appendCountTo($('.post-meta')))
@@ -1158,7 +1196,7 @@
       else if (!isArchive && !isCategory && !isTag) { //is index page
         var titles = [] //array to titles
 
-        var postsstr = 'titles.push("Hexo and GitHub");' //if you have a better way to get titles of posts, please change it
+        var postsstr = '' //if you have a better way to get titles of posts, please change it
         eval(postsstr)
 
         var promises = titles.map(function (title) {
