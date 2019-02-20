@@ -100,23 +100,23 @@
 <meta name="keywords" content="secp256k1,Bitcoin parameters">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ECDSA and Bitcoin II: Elliptic Curve and Private Key">
-<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/index.html">
+<meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/index.html">
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind secp256k1, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://jun-wang-2018.github.io/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/basepoints.png">
+<meta property="og:image" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/basepoints.png">
 <meta property="og:updated_time" content="2019-02-19T18:51:42.879Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECDSA and Bitcoin II: Elliptic Curve and Private Key">
 <meta name="twitter:description" content="In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind secp256k1, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it">
-<meta name="twitter:image" content="https://jun-wang-2018.github.io/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/basepoints.png">
+<meta name="twitter:image" content="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/basepoints.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/">
+  <link rel="canonical" href="https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/">
 
 
 
@@ -354,7 +354,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://jun-wang-2018.github.io/MyBlog/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/">
+    <link itemprop="mainEntityOfPage" href="https://jun-wang-2018.github.io/MyBlog/MyBlog/en/ECDSA-and-Bitcoin-II/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jun Wang">
@@ -397,9 +397,25 @@
                 
               
 
-              <time title="Created: 2019-02-20 02:51:42" itemprop="dateCreated datePublished" datetime="2019-02-20T02:51:42+08:00">2019-02-20</time>
+              <time title="Created: 2019-02-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-02-01T00:00:00+08:00">2019-02-01</time>
             
 
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-20 02:51:42" itemprop="dateModified" datetime="2019-02-20T02:51:42+08:00">2019-02-20</time>
+              
             
           </span>
 
@@ -448,8 +464,8 @@
                 </span>
             
                 <span class="post-meta-item-text">Comments: </span>
-                <a href="/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="en/2019-02-01-ECDSA-and-Bitcoin-II/" itemprop="commentCount"></span>
+                <a href="/MyBlog/en/ECDSA-and-Bitcoin-II/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="en/ECDSA-and-Bitcoin-II/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -477,7 +493,7 @@
       
 
       
-        <p>In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind <code>secp256k1</code>, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it looks like(<a href="/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/secp256k1.png" title="secp256k1.png">secp256k1.png</a>).<br>
+        <p>In previous post, we’ve got some general ideas about ECDSA, this post will focus on intuitions behind <code>secp256k1</code>, the set of parameters Bitcoin used. Before we dive in, we can get a glimpse of what it looks like(<a href="/MyBlog/en/ECDSA-and-Bitcoin-II/secp256k1.png" title="secp256k1.png">secp256k1.png</a>).<br>
 More info: <a href="http://www.secg.org/SEC2-Ver-1.0.pdf" target="_blank" rel="noopener">Recommended Elliptic Curve Domain Parameters: page 15</a>.</p>
 <a id="more"></a>
 <h2 id="i-base-point-and-order"><a class="markdownIt-Anchor" href="#i-base-point-and-order"></a> I. Base point and order</h2>
@@ -493,7 +509,7 @@ More info: <a href="http://www.secg.org/SEC2-Ver-1.0.pdf" target="_blank" rel="n
 <p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}
 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span></span></p>
 <p>If we starts from another point in the above group, we will see a very interesting property: the points generated by multiply this point are still in this <strong>group</strong>. Figure 3.1-3.27 show 27 base points and the group generated by them respectivly. One last base point does not show here is infinity point <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span>.By definition <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi><mo>+</mo><mi mathvariant="script">O</mi><mo>=</mo><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}+\mathcal{O}=\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span>, the generated group of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span> consisits of one point: itself.</p>
-<img src="/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/basepoints.png">
+<img src="/MyBlog/en/ECDSA-and-Bitcoin-II/basepoints.png">
 <p>If we count the number of generated points of each group we will find another interesting property. There are 12 base points, each of them generates the same 28 points group(27 points + <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span>). There are 6 base points, each of them generates a group of 14 points. There are 6 other base points each of them genertates a group of 7 points. There are 3 base points each of them generates a group of 3 points. Point <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">O</mi></mrow><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathcal" style="margin-right:0.02778em;">O</span></span></span></span></span> generates a group of 1 point.</p>
 <table>
 <thead>
@@ -708,7 +724,7 @@ Reference:<br>
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/MyBlog/en/2019-01-22-ECDSA-and-Bitcoin-I/" rel="next" title="ECDSA and Bitcoin I: Intuition About Elliptic Curve">
+              <a href="/MyBlog/en/ECDSA-and-Bitcoin-I/" rel="next" title="ECDSA and Bitcoin I: Intuition About Elliptic Curve">
                 <i class="fa fa-chevron-left"></i> ECDSA and Bitcoin I: Intuition About Elliptic Curve
               </a>
             
@@ -718,8 +734,8 @@ Reference:<br>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/MyBlog/en/2019-02-12-hexo-and-github/" rel="prev" title="Hexo and GitHub">
-                Hexo and GitHub <i class="fa fa-chevron-right"></i>
+              <a href="/MyBlog/en/from-jekyll-to-hexo/" rel="prev" title="From Jekyll To Hexo">
+                From Jekyll To Hexo <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -1128,8 +1144,8 @@ Reference:<br>
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://jun-wang-2018.github.io/MyBlog/en/2019-02-01-ECDSA-and-Bitcoin-II/";
-    this.page.identifier = "en/2019-02-01-ECDSA-and-Bitcoin-II/";
+    this.page.url = "https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/";
+    this.page.identifier = "en/ECDSA-and-Bitcoin-II/";
     this.page.title = 'ECDSA and Bitcoin II: Elliptic Curve and Private Key';
     };
   function loadComments() {
