@@ -1,18 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo Theme: Next]]></title>
-    <url>%2FMyBlog%2Fen%2Fhexo-theme-next%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Theme</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Test 测试]]></title>
     <url>%2FMyBlog%2Fzh-CN%2Fzh-CN-test%2F</url>
     <content type="text"><![CDATA[Copy-tex test Try copy/pasting some of the text below! Here is some (\KaTeX) math: x2+y2=z2x^2+y^2=z^2x2+y2=z2 The variables are (x), (y), and (z), which are all in (\mathbb{R}^+). Q.E.D. Copy-and-paste output: Here is some (\KaTeX) math: $x^2+y^2=z^2$ The variables are (x), (y), and (z), which are all in (\mathbb{R}^+). Q.E.D.]]></content>
