@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-21T07:51:59.452Z">
+<meta property="og:updated_time" content="2019-02-21T11:23:31.606Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo and GitHub">
 <meta name="twitter:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
@@ -428,7 +428,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-21 15:51:59" itemprop="dateModified" datetime="2019-02-21T15:51:59+08:00">2019-02-21</time>
+                <time title="Modified: 2019-02-21 19:23:31" itemprop="dateModified" datetime="2019-02-21T19:23:31+08:00">2019-02-21</time>
               
             
           </span>
@@ -516,11 +516,12 @@
 <h3 id="22-deploy-your-site"><a class="markdownIt-Anchor" href="#22-deploy-your-site"></a> 2.2 Deploy your site</h3>
 <p>Install <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>Once installed, find a file _config.yml in <code>MyBlog</code>, your local hexo directory. Edit the following two parts:</p>
+<p>Once installed, find a file <code>_config.yml</code> in <code>MyBlog</code>, the Hexo root directory. Edit the following<br>
+part:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">url: https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/  # This is your site url.</span><br><span class="line">root: /YOUR-REPOSITORY/</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY  # This is your repository url.</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>If you use text editor such as Atom or Sublime, don’t forgget to save your changes. If you do not have Atom or Sublime, you may use command</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi _config.yml</span><br></pre></td></tr></table></figure>
-<p>After edittig, press ‘Esc’ and input <a href="https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor" target="_blank" rel="noopener"><code>:wq</code></a>. Once changes saved,</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vi _config.yml</span><br></pre></td></tr></table></figure>
+<p>After edittig, press ‘Esc’ and input <a href="https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor" target="_blank" rel="noopener"><code>:wq</code></a> to save the changes. Then</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
 <p>Sometimes you need to generate categories and tags files before deployment(we’ll discuss later):</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
@@ -696,7 +697,7 @@ More info: <a href="https://youtu.be/3RjQznt-8kE" target="_blank" rel="noopener"
                 
                   <a href="/MyBlog/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -880,7 +881,7 @@ More info: <a href="https://youtu.be/3RjQznt-8kE" target="_blank" rel="noopener"
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">44k</span>
+    <span title="Symbols count total">45k</span>
   
 
   
@@ -889,7 +890,7 @@ More info: <a href="https://youtu.be/3RjQznt-8kE" target="_blank" rel="noopener"
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">40 mins.</span>
+    <span title="Reading time total">41 mins.</span>
   
 </div>
 
