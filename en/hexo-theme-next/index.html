@@ -110,7 +110,7 @@
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="Some adjustment I’ve made.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-21T15:51:34.824Z">
+<meta property="og:updated_time" content="2019-02-21T17:01:01.303Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Theme: Next">
 <meta name="twitter:description" content="Some adjustment I’ve made.">
@@ -411,12 +411,24 @@
                 
               
 
-              <time title="Created: 2019-02-21 19:27:59 / Modified: 23:51:34" itemprop="dateCreated datePublished" datetime="2019-02-21T19:27:59+08:00">2019-02-21</time>
+              <time title="Created: 2019-02-21 19:27:59" itemprop="dateCreated datePublished" datetime="2019-02-21T19:27:59+08:00">2019-02-21</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-22 01:01:01" itemprop="dateModified" datetime="2019-02-22T01:01:01+08:00">2019-02-22</time>
               
             
           </span>
@@ -483,22 +495,44 @@
       
         <p>Some adjustment I’ve made.</p>
 <a id="more"></a>
-<h3 id="image-align-center"><a class="markdownIt-Anchor" href="#image-align-center"></a> Image align center</h3>
+<h2 id="migrate-files-from-jekyll"><a class="markdownIt-Anchor" href="#migrate-files-from-jekyll"></a> Migrate files from Jekyll</h2>
+<p>Move all files in the Jekyll <code>_posts</code> folder to the <code>source/_posts</code> folder.<br>
+Modify the new_post_name setting in <code>_config.yml</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+<h2 id="image-align-center"><a class="markdownIt-Anchor" href="#image-align-center"></a> Image align center</h2>
 <p>themes\next\source\css_schemes\Mist_posts-expanded.styl</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.post-body img &#123; margin: auto; &#125;</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://github.com/iissnan/hexo-theme-next/issues/47" target="_blank" rel="noopener">ref</a></p>
-<h3 id="two-images-side-by-side"><a class="markdownIt-Anchor" href="#two-images-side-by-side"></a> Two images side by side</h3>
+<h2 id="two-images-side-by-side"><a class="markdownIt-Anchor" href="#two-images-side-by-side"></a> Two images side by side</h2>
 <p>themes\next\source\css_common\components\tags\group-pictures.styl</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.page-post-detail .post-body .group-picture-column &#123;</span><br><span class="line">  // float: none;</span><br><span class="line">  margin-top: 10px;</span><br><span class="line">  // width: auto !important;</span><br><span class="line">  img &#123; margin: 0 auto; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>In markdown post,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gp 2-3 %&#125;</span><br><span class="line">&#123;% asset_img 27.png %&#125;</span><br><span class="line">&#123;% asset_img EC.gif %&#125;</span><br><span class="line">&#123;% endgp %&#125;</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://github.com/iissnan/hexo-theme-next/issues/1043" target="_blank" rel="noopener">ref1</a>, <a href="https://github.com/iissnan/hexo-theme-next/issues/1086" target="_blank" rel="noopener">ref2</a></p>
-<h3 id="disqus"><a class="markdownIt-Anchor" href="#disqus"></a> Disqus</h3>
+<h2 id="disqus"><a class="markdownIt-Anchor" href="#disqus"></a> Disqus</h2>
 <p><a href="https://disqus.com/admin/" target="_blank" rel="noopener">https://disqus.com/admin/</a><br>
 <code>Settings</code> --&gt; <code>General</code> --&gt; <code>Shoretname</code> --&gt; <code>Your website shortname is xxxxx-xxxxxxxxxx</code><br>
 themes/next/_config.yml</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">disqus:</span><br><span class="line">  enable: true</span><br><span class="line">  shortname: xxxxx-xxxxxxxxxx</span><br><span class="line">  count: true</span><br><span class="line">  lazyload: false</span><br></pre></td></tr></table></figure>
-<h3 id="categories"><a class="markdownIt-Anchor" href="#categories"></a> Categories</h3>
+<h2 id="categories-and-tags"><a class="markdownIt-Anchor" href="#categories-and-tags"></a> Categories and Tags</h2>
+<h3 id="1-categories-page"><a class="markdownIt-Anchor" href="#1-categories-page"></a> 1. Categories page</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>source/categories/index.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Categories</span><br><span class="line">date: 2019-02-15 03:52:34</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="2-tags-page"><a class="markdownIt-Anchor" href="#2-tags-page"></a> 2. Tags page</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>source/tags/index.md</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Tags</span><br><span class="line">date: 2019-02-15 03:53:35</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="3-menu-settings"><a class="markdownIt-Anchor" href="#3-menu-settings"></a> 3. Menu Settings</h3>
+<p>themes/next/_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  #about: /about/ || user</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  tags: /tags/ || tags</span><br></pre></td></tr></table></figure>
+<h3 id="4-font-matter"><a class="markdownIt-Anchor" href="#4-font-matter"></a> 4. Font Matter</h3>
+<p>Such as</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:  &quot;ECDSA and Bitcoin I: Intuition About Elliptic Curve&quot;</span><br><span class="line">categories: [ECDSA and Bitcoin]</span><br><span class="line">tags: [Elliptic Curve, Math, Python Code]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="5-generate-and-deploy"><a class="markdownIt-Anchor" href="#5-generate-and-deploy"></a> 5. Generate and deploy</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
+<p>As mentioned in previous post “Hexo and GitHub”, here we need to generate categories pages and tags pages before deployment.<br>
+More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noopener">hexo doc</a></p>
 
       
     </div>
@@ -771,7 +805,7 @@ themes/next/_config.yml</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#image-align-center"><span class="nav-text"> Image align center</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#two-images-side-by-side"><span class="nav-text"> Two images side by side</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#disqus"><span class="nav-text"> Disqus</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#categories"><span class="nav-text"> Categories</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#migrate-files-from-jekyll"><span class="nav-text"> Migrate files from Jekyll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image-align-center"><span class="nav-text"> Image align center</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-images-side-by-side"><span class="nav-text"> Two images side by side</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#disqus"><span class="nav-text"> Disqus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-and-tags"><span class="nav-text"> Categories and Tags</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-categories-page"><span class="nav-text"> 1. Categories page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-tags-page"><span class="nav-text"> 2. Tags page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-menu-settings"><span class="nav-text"> 3. Menu Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-font-matter"><span class="nav-text"> 4. Font Matter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-generate-and-deploy"><span class="nav-text"> 5. Generate and deploy</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -810,7 +844,7 @@ themes/next/_config.yml</p>
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">45k</span>
+    <span title="Symbols count total">46k</span>
   
 
   
@@ -819,7 +853,7 @@ themes/next/_config.yml</p>
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">41 mins.</span>
+    <span title="Reading time total">42 mins.</span>
   
 </div>
 
