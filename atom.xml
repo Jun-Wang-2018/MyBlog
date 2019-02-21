@@ -6,7 +6,7 @@
   <link href="/MyBlog/atom.xml" rel="self"/>
   
   <link href="https://jun-wang-2018.github.io/MyBlog/"/>
-  <updated>2019-02-21T11:05:35.572Z</updated>
+  <updated>2019-02-21T11:30:00.815Z</updated>
   <id>https://jun-wang-2018.github.io/MyBlog/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo Theme: Next</title>
+    <link href="https://jun-wang-2018.github.io/MyBlog/en/hexo-theme-next/"/>
+    <id>https://jun-wang-2018.github.io/MyBlog/en/hexo-theme-next/</id>
+    <published>2019-02-21T11:27:59.000Z</published>
+    <updated>2019-02-21T11:30:00.815Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Hexo" scheme="https://jun-wang-2018.github.io/MyBlog/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="https://jun-wang-2018.github.io/MyBlog/tags/Hexo/"/>
+    
+      <category term="Theme" scheme="https://jun-wang-2018.github.io/MyBlog/tags/Theme/"/>
+    
+  </entry>
   
   <entry>
     <title>Test 测试</title>
