@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hexo Theme: Next]]></title>
-    <url>%2FMyBlog%2Fen%2Fhexo-theme-next%2F</url>
+    <title><![CDATA[Hexo Adjustment]]></title>
+    <url>%2FMyBlog%2Fen%2Fhexo-adjustment%2F</url>
     <content type="text"><![CDATA[Some adjustment I’ve made. Migrate files from Jekyll Move all files in the Jekyll _posts folder to the source/_posts folder. Modify the new_post_name setting in _config.yml: 1new_post_name: :year-:month-:day-:title.md Image align center themes\next\source\css_schemes\Mist_posts-expanded.styl 1.post-body img &#123; margin: auto; &#125; More info: ref Two images side by side themes\next\source\css_common\components\tags\group-pictures.styl 123456.page-post-detail .post-body .group-picture-column &#123; // float: none; margin-top: 10px; // width: auto !important; img &#123; margin: 0 auto; &#125;&#125; In markdown post, 1234&#123;% gp 2-3 %&#125;&#123;% asset_img 27.png %&#125;&#123;% asset_img EC.gif %&#125;&#123;% endgp %&#125; More info: ref1, ref2 Disqus https://disqus.com/admin/ Settings --&gt; General --&gt; Shoretname --&gt; Your website shortname is xxxxx-xxxxxxxxxx themes/next/_config.yml 12345disqus: enable: true shortname: xxxxx-xxxxxxxxxx count: true lazyload: false Categories and Tags 1. Categories page 1$ hexo new page categories source/categories/index.md 123456---title: Categoriesdate: 2019-02-15 03:52:34type: &quot;categories&quot;comments: false--- 2. Tags page 1$ hexo new page tags source/tags/index.md 123456---title: Tagsdate: 2019-02-15 03:53:35type: &quot;tags&quot;comments: false--- More info: ref1ref2 3. Menu Settings themes/next/_config.yml 123456menu: home: / || home #about: /about/ || user archives: /archives/ || archive categories: /categories/ || th tags: /tags/ || tags 4. Font Matter Add categories and tags to each post. Such as 12345---title: &quot;ECDSA and Bitcoin I: Intuition About Elliptic Curve&quot;categories: [ECDSA and Bitcoin]tags: [Elliptic Curve, Math, Python Code]--- 5. Generate and deploy 1$ hexo clean &amp;&amp; hexo deploy -g As mentioned in previous post “Hexo and GitHub”, here we need to generate categories pages and tags pages before deployment. More info: hexo doc]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Theme</tag>
+        <tag>Adjustment</tag>
       </tags>
   </entry>
   <entry>
