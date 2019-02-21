@@ -106,18 +106,18 @@
 
 
 
-  <meta name="description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub is a good choice for those who want to build a Blog and write so">
+  <meta name="description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
 <meta name="keywords" content="Hexo,GitHub">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo and GitHub">
 <meta property="og:url" content="https://jun-wang-2018.github.io/MyBlog/en/hexo-and-github/index.html">
 <meta property="og:site_name" content="Jun&#39;s Blog">
-<meta property="og:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub is a good choice for those who want to build a Blog and write so">
+<meta property="og:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-20T18:02:35.319Z">
+<meta property="og:updated_time" content="2019-02-21T05:05:21.412Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo and GitHub">
-<meta name="twitter:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub is a good choice for those who want to build a Blog and write so">
+<meta name="twitter:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
 
 
 
@@ -432,7 +432,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-21 02:02:35" itemprop="dateModified" datetime="2019-02-21T02:02:35+08:00">2019-02-21</time>
+                <time title="Modified: 2019-02-21 13:05:21" itemprop="dateModified" datetime="2019-02-21T13:05:21+08:00">2019-02-21</time>
               
             
           </span>
@@ -504,14 +504,16 @@
       
 
       
-        <p>KaTeX is <a href="https://katex.org/" target="_blank" rel="noopener">the fastest math typesetting library for the web</a>. Hexo is <a href="https://hexo.io/" target="_blank" rel="noopener">a fast, simple &amp; powerful blog framework</a>. KaTeX, Hexo and GitHub is a good choice for those who want to build a Blog and write some equations on his/her posts.</p>
+        <p>KaTeX is <a href="https://katex.org/" target="_blank" rel="noopener">the fastest math typesetting library for the web</a>. Hexo is <a href="https://hexo.io/" target="_blank" rel="noopener">a fast, simple &amp; powerful blog framework</a>. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and write some equations on his/her posts.</p>
 <a id="more"></a>
 <h2 id="1-hexo"><a class="markdownIt-Anchor" href="#1-hexo"></a> 1. Hexo</h2>
 <h3 id="installation"><a class="markdownIt-Anchor" href="#installation"></a> Installation</h3>
+<p>In your terminal</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>If it doesn’t work on your Mac, try adding <code>sudo</code> at the beginning.</p>
 <h3 id="setup-your-blog"><a class="markdownIt-Anchor" href="#setup-your-blog"></a> Setup your blog</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init hexoBlog</span><br><span class="line">$ cd hexoBlog</span><br></pre></td></tr></table></figure>
-<p>A directory <code>hexoBlog</code> is created and initialized. It’s the Hexo root directory where your hexo files stored.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init MyBlog</span><br><span class="line">$ cd MyBlog</span><br></pre></td></tr></table></figure>
+<p>A directory <code>MyBlog</code> is created and initialized. It’s the Hexo root directory where your hexo files are stored.</p>
 <h3 id="run-local-server"><a class="markdownIt-Anchor" href="#run-local-server"></a> Run local server</h3>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>The output is:</p>
@@ -519,54 +521,61 @@
 <p>Open <code>http://localhost:4000</code> in your brower, you’ll see your initial site.</p>
 <p>More info: <a href="https://hexo.io/" target="_blank" rel="noopener">hexo.io</a>, <a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo-github</a></p>
 <h2 id="2-deploy-to-github"><a class="markdownIt-Anchor" href="#2-deploy-to-github"></a> 2. Deploy to GitHub</h2>
-<h3 id="21-create-a-new-empty-repository"><a class="markdownIt-Anchor" href="#21-create-a-new-empty-repository"></a> 2.1 Create a new empty repository</h3>
-<p>If you don’t have a GitHub account, create one. If you have a GitHub account, click <a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a> and create a new empty repository: Choose a name(say ‘hexoBlog’), and click <code>create repository</code>, leave everything else alone. On your new empty repository page, find the line begin with “git remote add origin…”. Copy this line and replace the following code(line 6) with it.</p>
-<h3 id="22-connect-your-hexo-to-github"><a class="markdownIt-Anchor" href="#22-connect-your-hexo-to-github"></a> 2.2. Connect your Hexo to GitHub</h3>
-<p>Make sure your current directory is <code>hexoBlog</code>, the Hexo root directory.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git</span><br><span class="line">$ git push origin gh-pages</span><br></pre></td></tr></table></figure>
-<h4 id="alias-for-a-link"><a class="markdownIt-Anchor" href="#alias-for-a-link"></a> Alias for a link</h4>
-<p>Line 6 means you give your link a alias “origin”. So if you want to push a branch to it, you don’t need to copy and paste this link like this:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git gh-pages</span><br></pre></td></tr></table></figure>
-<p>Of course, you can choose whatever alias you want. For example:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add destination https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME.git</span><br><span class="line">$ git push destination gh-pages</span><br></pre></td></tr></table></figure>
-<h4 id="master-vs-gh-pages"><a class="markdownIt-Anchor" href="#master-vs-gh-pages"></a> master vs. gh-pages</h4>
-<p>If you want to build your site on branch “master” instead of “gh-pages”, you can see <a href="https://hexo.io/docs/deployment" target="_blank" rel="noopener">hexo doc</a>. If you want to know the difference between gh-pages and master, click  <a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">here</a>.</p>
-<p>Refresh your empty repository, now you can see your hexo files are pushed there. Those are development files not site files. Your site is not deployed yet, there is still one more step to go. This is a vital difference between Hexo and Jekyll. If you use Jekyll, after you push your local Jekyll root repository to GitHub, your site is deployed automatically.</p>
-<h3 id="23-deploy-your-site"><a class="markdownIt-Anchor" href="#23-deploy-your-site"></a> 2.3 Deploy your site</h3>
+<h3 id="21-create-an-empty-repository"><a class="markdownIt-Anchor" href="#21-create-an-empty-repository"></a> 2.1 Create an empty repository</h3>
+<p>If you don’t have a GitHub account, create one. If you have a GitHub account, click <a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a> and create a empty repository: Choose a name(say ‘MyBlog’), and click <code>create repository</code>, leave everything else alone. Click “Create repository”. Look at your browser, the url of your repository is</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY</span><br></pre></td></tr></table></figure>
+<h3 id="22-deploy-your-site"><a class="markdownIt-Anchor" href="#22-deploy-your-site"></a> 2.2 Deploy your site</h3>
 <p>Install <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-<p>If it doesn’t work on your Mac, try adding <code>sudo</code> at the beginning. Once installed, find a file _config.yml in <code>hexoBlog</code>, your local hexo directory. Edit the following part:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
-<p>If you build your site on master, <code>branch: master</code>. Don’t forgget to save your changes. If you do not have Atom or Sublime, you may use command</p>
+<p>Once installed, find a file _config.yml in <code>MyBlog</code>, your local hexo directory. Edit the following two parts:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">url: https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/  # This is your site url.</span><br><span class="line">root: /YOUR-REPOSITORY/</span><br><span class="line">...</span><br><span class="line">...</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY  # This is your repository url.</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>If you use text editor such as Atom or Sublime, don’t forgget to save your changes. If you do not have Atom or Sublime, you may use command</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi _config.yml</span><br></pre></td></tr></table></figure>
 <p>After edittig, press ‘Esc’ and input <a href="https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor" target="_blank" rel="noopener"><code>:wq</code></a>. Once changes saved,</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
-<p>If you want to generate before deployment:</p>
+<p>Sometimes you need to generate categories and tags files before deployment(we’ll discuss later):</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
-<p>Go back to your GitHub repository “<a href="https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME" target="_blank" rel="noopener">https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-CHOSEN-NAME</a>”, find <code>Settings</code> button and click it. Scroll down to the tag “GitHub Pages”, you will See</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your site is published at https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-CHOSEN-NAME/</span><br></pre></td></tr></table></figure>
-<p>Click the link and you will see your deployed site.</p>
-<h2 id="3-one-more-thing"><a class="markdownIt-Anchor" href="#3-one-more-thing"></a> 3. One more thing</h2>
-<p>Now your “hexoBlog” repository on GitHub is your deployed site. Where are your previously pushed Hexo files? They are covered by your site files. If you want to keep these Hexo files therefore keep track of your develpment, you need to create another repository on GitHub.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">Before you do anything, please backup your local Hexo root repository. Save it somewhere else. Just in case.</span><br></pre></td></tr></table></figure>
-<h3 id="create-another-empty-repository-on-github"><a class="markdownIt-Anchor" href="#create-another-empty-repository-on-github"></a> Create another empty repository on GitHub</h3>
-<p>Click <a href="https://github.com/new" target="_blank" rel="noopener">https://github.com/new</a> and create a new empty repository: Choose a name(say ‘Hexo’) and click <code>create repository</code>, leave everything else alone. On your new empty repository page, find the line begin with “git remote add origin…”. Copy this line and substitute the following code(line 6) with it. And replace “origin” with “another-origin”.</p>
-<h3 id="reconnect-your-hexo-to-github"><a class="markdownIt-Anchor" href="#reconnect-your-hexo-to-github"></a> Reconnect your Hexo to GitHub</h3>
-<p>Note: Line 6 is different from the last time. Make sure you create <code>another-origin</code> and the link is https://…/YOUR-NEW-REPOSITORY.git. In my case, it’s https://…/Hexo.git, which is different from the former one https://…/hexoBlog.git. Line 7 is also different.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add another-origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-NEW-REPOSITORY.git</span><br><span class="line">$ git push another-origin gh-pages</span><br></pre></td></tr></table></figure>
-<p>Refresh your GitHub Hexo repository, now you’ll see folders like scaffolds, source, themes, etc. If everything goes well, you can <a href="https://stackoverflow.com/questions/1221840/remote-origin-already-exists-on-git-push-to-a-new-repository" target="_blank" rel="noopener">remove the old “origin”</a>.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote rm origin</span><br></pre></td></tr></table></figure>
-<p>Done! It’s time to enjoy what we’ve done.</p>
+<p>Go back to your browser, refresh your GitHub repository page, find <code>Settings</code> button and click it. Scroll down to the tag “GitHub Pages”, now your “Source” is <code>None</code>. Click <code>None</code> button, select <code>master branch</code> and <code>Save</code>. After your site automatically refreshed. Go back to the tag “GitHub Pages”, you’ll see</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your site is published at https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/</span><br></pre></td></tr></table></figure>
+<p>Click the link and you will see a “404” error message. Don’t panic, refresh your brower several minutes later and you’ll see your site.<br>
+More info: <a href="https://hexo.io/docs/deployment" target="_blank" rel="noopener">hexo doc</a>.</p>
+<h3 id="23-create-a-repository-for-your-hexo-develpment-files"><a class="markdownIt-Anchor" href="#23-create-a-repository-for-your-hexo-develpment-files"></a> 2.3 Create a repository for your Hexo develpment files</h3>
+<p>There is a vital difference between Hexo and Jekyll. In Jekyll, develpment files and site files are pushed to the same repository on GitHub. In Hexo, if you want to keep track of your develpment, you need to create another repository on GitHub.<br>
+Let’s create one and call it OUR-DEV-REPOSITORY.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">The following operations are on OUR-DEV-REPOSITORY(your develpment files) not YOUR-REPOSITORY(your site).</span><br></pre></td></tr></table></figure>
+<p>Tips: Before you do anything BIG, backup your local Hexo root repository and save it somewhere else. Just in case.</p>
+<h3 id="24-push-develpment-files-to-github"><a class="markdownIt-Anchor" href="#24-push-develpment-files-to-github"></a> 2.4 push develpment files to GitHub</h3>
+<p>Go back to your terminal, change directory to your Hexo root directory(in my case it’s <code>MyBlog</code>).</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-DEV-REPOSITORY.git</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+<p>Refresh OUR-DEV-REPOSITORY on GitHub, if there are folders like <code>scaffolds</code>, <code>source</code>, <code>themes</code> etc., you are done! There are two things need to mention.</p>
+<h4 id="alias-for-a-link"><a class="markdownIt-Anchor" href="#alias-for-a-link"></a> Alias for a link</h4>
+<p>Line 5 means you give your link a alias “origin”. So if you want to push a branch to it, you don’t need to copy and paste this link like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY.git master</span><br></pre></td></tr></table></figure>
+<p>You may choose another alias if you want. For example:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add destination https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY.git</span><br><span class="line">$ git push destination master</span><br></pre></td></tr></table></figure>
+<p>“origin” is just the default alias.<br>
+<a href="https://stackoverflow.com/questions/1221840/remote-origin-already-exists-on-git-push-to-a-new-repository" target="_blank" rel="noopener">Other usefull commands</a>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git remote -v      // List all aliases.</span><br><span class="line">$ git remote rm destination      // Remove the alias named &quot;destination&quot;.</span><br></pre></td></tr></table></figure>
+<h4 id="master-vs-gh-pages"><a class="markdownIt-Anchor" href="#master-vs-gh-pages"></a> master vs. gh-pages</h4>
+<p>If you want to create a repository on branch “gh-pages” instead of “master”, add one line after <code>git init</code> and replace <code>master</code> with <code>gh-pages</code>, it looks like this:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY.git</span><br><span class="line">$ git push origin gh-pages</span><br></pre></td></tr></table></figure>
+<p>Both works fine. I use “master”, the default one.<br>
+More info: <a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">branch</a>, <a href="https://git-scm.com/docs/git-branch" target="_blank" rel="noopener">git doc</a></p>
+<h2 id="3-lets-enjoy-what-weve-done"><a class="markdownIt-Anchor" href="#3-lets-enjoy-what-weve-done"></a> 3. Let’s enjoy what we’ve done.</h2>
 <h3 id="sever-deploy-and-push"><a class="markdownIt-Anchor" href="#sever-deploy-and-push"></a> Sever, Deploy and Push</h3>
 <h4 id="run-local-server-2"><a class="markdownIt-Anchor" href="#run-local-server-2"></a> Run local server</h4>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>Open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in your brower, you’ll see your site on your machine.</p>
+<p>Open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in a brower and our site is there.</p>
+<h4 id="write-a-new-post"><a class="markdownIt-Anchor" href="#write-a-new-post"></a> Write a new post</h4>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;New Post&quot;</span><br></pre></td></tr></table></figure>
+<p>Refresh your browser and you’ll see it there.</p>
 <h4 id="generate-and-deploy"><a class="markdownIt-Anchor" href="#generate-and-deploy"></a> Generate and Deploy</h4>
+<p>Go back to the terminal, stop the local server(Ctrl+C), and</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
-<p>Refresh your deployed site on GitHub, if you’ve made some changes, you’ll see they are updated.</p>
+<p>Open your site url in a browser, you’ll see the “New Post” there too.</p>
 <h3 id="push"><a class="markdownIt-Anchor" href="#push"></a> Push</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push</span><br></pre></td></tr></table></figure>
-<p>Check your GitHub Hexo repository, there are folders like scaffolds, source, themes, etc. While in your GitHub hexoBlog repository, there are folders like archives, categories, css, etc.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;second commit&quot;</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
+<p>Refresh OUR-DEV-REPOSITORY on GitHub, you’ll see <code>Latest commit ... minutes ago</code>. Your develpment files are updated.</p>
 
       
     </div>
@@ -845,7 +854,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-hexo"><span class="nav-text"> 1. Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#installation"><span class="nav-text"> Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup-your-blog"><span class="nav-text"> Setup your blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-local-server"><span class="nav-text"> Run local server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-deploy-to-github"><span class="nav-text"> 2. Deploy to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-create-a-new-empty-repository"><span class="nav-text"> 2.1 Create a new empty repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-connect-your-hexo-to-github"><span class="nav-text"> 2.2. Connect your Hexo to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#alias-for-a-link"><span class="nav-text"> Alias for a link</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#master-vs-gh-pages"><span class="nav-text"> master vs. gh-pages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-deploy-your-site"><span class="nav-text"> 2.3 Deploy your site</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-one-more-thing"><span class="nav-text"> 3. One more thing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#create-another-empty-repository-on-github"><span class="nav-text"> Create another empty repository on GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#reconnect-your-hexo-to-github"><span class="nav-text"> Reconnect your Hexo to GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sever-deploy-and-push"><span class="nav-text"> Sever, Deploy and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#run-local-server-2"><span class="nav-text"> Run local server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#generate-and-deploy"><span class="nav-text"> Generate and Deploy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push"><span class="nav-text"> Push</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-hexo"><span class="nav-text"> 1. Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#installation"><span class="nav-text"> Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup-your-blog"><span class="nav-text"> Setup your blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-local-server"><span class="nav-text"> Run local server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-deploy-to-github"><span class="nav-text"> 2. Deploy to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-create-an-empty-repository"><span class="nav-text"> 2.1 Create an empty repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-deploy-your-site"><span class="nav-text"> 2.2 Deploy your site</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-create-a-repository-for-your-hexo-develpment-files"><span class="nav-text"> 2.3 Create a repository for your Hexo develpment files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-push-develpment-files-to-github"><span class="nav-text"> 2.4 push develpment files to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#alias-for-a-link"><span class="nav-text"> Alias for a link</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#master-vs-gh-pages"><span class="nav-text"> master vs. gh-pages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-lets-enjoy-what-weve-done"><span class="nav-text"> 3. Let’s enjoy what we’ve done.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sever-deploy-and-push"><span class="nav-text"> Sever, Deploy and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#run-local-server-2"><span class="nav-text"> Run local server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#write-a-new-post"><span class="nav-text"> Write a new post</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#generate-and-deploy"><span class="nav-text"> Generate and Deploy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push"><span class="nav-text"> Push</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -884,7 +893,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">44k</span>
+    <span title="Symbols count total">43k</span>
   
 
   
@@ -893,7 +902,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">40 mins.</span>
+    <span title="Reading time total">39 mins.</span>
   
 </div>
 
