@@ -26,10 +26,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" href="/MyBlog/lib/Han/dist/han.min.css?v=3.3">
-
 
 
 
@@ -114,7 +110,7 @@
 <meta property="og:site_name" content="Jun&#39;s Blog">
 <meta property="og:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-21T05:05:21.412Z">
+<meta property="og:updated_time" content="2019-02-21T06:44:04.487Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo and GitHub">
 <meta name="twitter:description" content="KaTeX is the fastest math typesetting library for the web. Hexo is a fast, simple &amp;amp; powerful blog framework. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and">
@@ -432,7 +428,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-21 13:05:21" itemprop="dateModified" datetime="2019-02-21T13:05:21+08:00">2019-02-21</time>
+                <time title="Modified: 2019-02-21 14:44:04" itemprop="dateModified" datetime="2019-02-21T14:44:04+08:00">2019-02-21</time>
               
             
           </span>
@@ -498,13 +494,13 @@
     
     
     
-    <div class="post-body han-init-context" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody">
 
       
       
 
       
-        <p>KaTeX is <a href="https://katex.org/" target="_blank" rel="noopener">the fastest math typesetting library for the web</a>. Hexo is <a href="https://hexo.io/" target="_blank" rel="noopener">a fast, simple &amp; powerful blog framework</a>. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and write some equations on his/her posts.</p>
+        <p>KaTeX is <a href="https://katex.org/" target="_blank" rel="noopener">the fastest math typesetting library for the web</a>. Hexo is <a href="https://hexo.io/" target="_blank" rel="noopener">a fast, simple &amp; powerful blog framework</a>. KaTeX, Hexo and GitHub together is a good choice for those who want to build a Blog and write some equations on his/her posts. Before embed KaTeX, let’s build Hexo on GitHub.</p>
 <a id="more"></a>
 <h2 id="1-hexo"><a class="markdownIt-Anchor" href="#1-hexo"></a> 1. Hexo</h2>
 <h3 id="installation"><a class="markdownIt-Anchor" href="#installation"></a> Installation</h3>
@@ -537,17 +533,17 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
 <p>Go back to your browser, refresh your GitHub repository page, find <code>Settings</code> button and click it. Scroll down to the tag “GitHub Pages”, now your “Source” is <code>None</code>. Click <code>None</code> button, select <code>master branch</code> and <code>Save</code>. After your site automatically refreshed. Go back to the tag “GitHub Pages”, you’ll see</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your site is published at https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/</span><br></pre></td></tr></table></figure>
-<p>Click the link and you will see a “404” error message. Don’t panic, refresh your brower several minutes later and you’ll see your site.<br>
+<p>Click the link and you will see a “404” error message. Don’t panic, refresh your brower several minutes later and you’ll see a “Hello World” post on your site.<br>
 More info: <a href="https://hexo.io/docs/deployment" target="_blank" rel="noopener">hexo doc</a>.</p>
 <h3 id="23-create-a-repository-for-your-hexo-develpment-files"><a class="markdownIt-Anchor" href="#23-create-a-repository-for-your-hexo-develpment-files"></a> 2.3 Create a repository for your Hexo develpment files</h3>
 <p>There is a vital difference between Hexo and Jekyll. In Jekyll, develpment files and site files are pushed to the same repository on GitHub. In Hexo, if you want to keep track of your develpment, you need to create another repository on GitHub.<br>
-Let’s create one and call it OUR-DEV-REPOSITORY.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">The following operations are on OUR-DEV-REPOSITORY(your develpment files) not YOUR-REPOSITORY(your site).</span><br></pre></td></tr></table></figure>
-<p>Tips: Before you do anything BIG, backup your local Hexo root repository and save it somewhere else. Just in case.</p>
+Let’s create one and call it YOUR-DEV-REPOSITORY.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Warning:</span><br><span class="line">The following operations are on</span><br><span class="line">https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-DEV-REPOSITORY</span><br><span class="line">not</span><br><span class="line">https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY  # Your site repository</span><br><span class="line">or</span><br><span class="line">https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/  # Your site</span><br></pre></td></tr></table></figure>
+<p>Another tip: Before you do anything BIG, backup your local Hexo root repository and save it somewhere else. Just in case.</p>
 <h3 id="24-push-develpment-files-to-github"><a class="markdownIt-Anchor" href="#24-push-develpment-files-to-github"></a> 2.4 push develpment files to GitHub</h3>
 <p>Go back to your terminal, change directory to your Hexo root directory(in my case it’s <code>MyBlog</code>).</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-DEV-REPOSITORY.git</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
-<p>Refresh OUR-DEV-REPOSITORY on GitHub, if there are folders like <code>scaffolds</code>, <code>source</code>, <code>themes</code> etc., you are done! There are two things need to mention.</p>
+<p>Refresh YOUR-DEV-REPOSITORY on GitHub, if there are folders like <code>scaffolds</code>, <code>source</code>, <code>themes</code> etc, your develpment are uploaded. There are two things need to mention.</p>
 <h4 id="alias-for-a-link"><a class="markdownIt-Anchor" href="#alias-for-a-link"></a> Alias for a link</h4>
 <p>Line 5 means you give your link a alias “origin”. So if you want to push a branch to it, you don’t need to copy and paste this link like this:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY.git master</span><br></pre></td></tr></table></figure>
@@ -559,23 +555,25 @@ Let’s create one and call it OUR-DEV-REPOSITORY.</p>
 <h4 id="master-vs-gh-pages"><a class="markdownIt-Anchor" href="#master-vs-gh-pages"></a> master vs. gh-pages</h4>
 <p>If you want to create a repository on branch “gh-pages” instead of “master”, add one line after <code>git init</code> and replace <code>master</code> with <code>gh-pages</code>, it looks like this:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br><span class="line">$ git checkout -b gh-pages</span><br><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;first commit&quot;</span><br><span class="line">$ git remote add origin https://github.com/YOUR-GITHUB-ACCOUNT/YOUR-REPOSITORY.git</span><br><span class="line">$ git push origin gh-pages</span><br></pre></td></tr></table></figure>
-<p>Both works fine. I use “master”, the default one.<br>
+<p>Both works fine. I prefer “master”, the default one.<br>
 More info: <a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">branch</a>, <a href="https://git-scm.com/docs/git-branch" target="_blank" rel="noopener">git doc</a></p>
-<h2 id="3-lets-enjoy-what-weve-done"><a class="markdownIt-Anchor" href="#3-lets-enjoy-what-weve-done"></a> 3. Let’s enjoy what we’ve done.</h2>
+<h2 id="3-check-everything"><a class="markdownIt-Anchor" href="#3-check-everything"></a> 3. Check everything</h2>
 <h3 id="sever-deploy-and-push"><a class="markdownIt-Anchor" href="#sever-deploy-and-push"></a> Sever, Deploy and Push</h3>
 <h4 id="run-local-server-2"><a class="markdownIt-Anchor" href="#run-local-server-2"></a> Run local server</h4>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>Open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in a brower and our site is there.</p>
+<p>Open <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> in a brower and your site is there.</p>
 <h4 id="write-a-new-post"><a class="markdownIt-Anchor" href="#write-a-new-post"></a> Write a new post</h4>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &quot;New Post&quot;</span><br></pre></td></tr></table></figure>
 <p>Refresh your browser and you’ll see it there.</p>
 <h4 id="generate-and-deploy"><a class="markdownIt-Anchor" href="#generate-and-deploy"></a> Generate and Deploy</h4>
 <p>Go back to the terminal, stop the local server(Ctrl+C), and</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
-<p>Open your site url in a browser, you’ll see the “New Post” there too.</p>
+<p>Open <a href="https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/" target="_blank" rel="noopener">https://YOUR-GITHUB-ACCOUNT.github.io/YOUR-REPOSITORY/</a> in a browser and the “New Post” is there.</p>
 <h3 id="push"><a class="markdownIt-Anchor" href="#push"></a> Push</h3>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ git status</span><br><span class="line">$ git add .</span><br><span class="line">$ git commit -m &quot;second commit&quot;</span><br><span class="line">$ git push origin master</span><br></pre></td></tr></table></figure>
-<p>Refresh OUR-DEV-REPOSITORY on GitHub, you’ll see <code>Latest commit ... minutes ago</code>. Your develpment files are updated.</p>
+<p>Refresh YOUR-DEV-REPOSITORY on GitHub and see <code>Latest commit ... seconds ago</code>.<br>
+If everything works fine, we are good to go.<br>
+More info: <a href="https://youtu.be/3RjQznt-8kE" target="_blank" rel="noopener">Git &amp; GitHub Tutorial for Beginners</a></p>
 
       
     </div>
@@ -705,7 +703,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
                 
                   <a href="/MyBlog/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -732,7 +730,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -767,7 +765,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
                     
                       
                     
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -854,7 +852,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-hexo"><span class="nav-text"> 1. Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#installation"><span class="nav-text"> Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup-your-blog"><span class="nav-text"> Setup your blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-local-server"><span class="nav-text"> Run local server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-deploy-to-github"><span class="nav-text"> 2. Deploy to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-create-an-empty-repository"><span class="nav-text"> 2.1 Create an empty repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-deploy-your-site"><span class="nav-text"> 2.2 Deploy your site</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-create-a-repository-for-your-hexo-develpment-files"><span class="nav-text"> 2.3 Create a repository for your Hexo develpment files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-push-develpment-files-to-github"><span class="nav-text"> 2.4 push develpment files to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#alias-for-a-link"><span class="nav-text"> Alias for a link</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#master-vs-gh-pages"><span class="nav-text"> master vs. gh-pages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-lets-enjoy-what-weve-done"><span class="nav-text"> 3. Let’s enjoy what we’ve done.</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sever-deploy-and-push"><span class="nav-text"> Sever, Deploy and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#run-local-server-2"><span class="nav-text"> Run local server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#write-a-new-post"><span class="nav-text"> Write a new post</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#generate-and-deploy"><span class="nav-text"> Generate and Deploy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push"><span class="nav-text"> Push</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-hexo"><span class="nav-text"> 1. Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#installation"><span class="nav-text"> Installation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup-your-blog"><span class="nav-text"> Setup your blog</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#run-local-server"><span class="nav-text"> Run local server</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-deploy-to-github"><span class="nav-text"> 2. Deploy to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21-create-an-empty-repository"><span class="nav-text"> 2.1 Create an empty repository</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22-deploy-your-site"><span class="nav-text"> 2.2 Deploy your site</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#23-create-a-repository-for-your-hexo-develpment-files"><span class="nav-text"> 2.3 Create a repository for your Hexo develpment files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#24-push-develpment-files-to-github"><span class="nav-text"> 2.4 push develpment files to GitHub</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#alias-for-a-link"><span class="nav-text"> Alias for a link</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#master-vs-gh-pages"><span class="nav-text"> master vs. gh-pages</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-check-everything"><span class="nav-text"> 3. Check everything</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sever-deploy-and-push"><span class="nav-text"> Sever, Deploy and Push</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#run-local-server-2"><span class="nav-text"> Run local server</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#write-a-new-post"><span class="nav-text"> Write a new post</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#generate-and-deploy"><span class="nav-text"> Generate and Deploy</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#push"><span class="nav-text"> Push</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -893,7 +891,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">43k</span>
+    <span title="Symbols count total">44k</span>
   
 
   
@@ -902,7 +900,7 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">39 mins.</span>
+    <span title="Reading time total">40 mins.</span>
   
 </div>
 
@@ -1502,19 +1500,6 @@ More info: <a href="https://guides.github.com/introduction/flow/" target="_blank
   
   
 
-  
-    
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css">
-
-  
-    <script src="//cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.js"></script>
-  
-  
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/contrib/copy-tex.min.css">
-  
-
-
-    
   
 
 
