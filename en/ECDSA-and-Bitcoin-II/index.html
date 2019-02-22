@@ -458,19 +458,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/MyBlog/en/ECDSA-and-Bitcoin-II/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="en/ECDSA-and-Bitcoin-II/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -772,10 +759,7 @@ Reference:<br>
           
 
   
-    <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-      </div>
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1162,30 +1146,33 @@ Reference:<br>
 
 
   
-  
-  <script id="dsq-count-scr" src="https://myblog-ip5jfdudvn.disqus.com/count.js" async></script>
 
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var disqus_config = function() {
-    this.page.url = "https://jun-wang-2018.github.io/MyBlog/en/ECDSA-and-Bitcoin-II/";
-    this.page.identifier = "en/ECDSA-and-Bitcoin-II/";
-    this.page.title = 'ECDSA and Bitcoin II: Base Point, Order and secp256k1';
-    };
-  function loadComments() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://myblog-ip5jfdudvn.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  }
-  
-    loadComments();
-  
+  var gitalk = new Gitalk({
+    clientID: 'ccf24a0aba2a5395ca6d',
+    clientSecret: '83781b4bb109295dee308ddc283f23b8787ad262',
+    repo: 'MyBlog',
+    owner: 'Jun-Wang-2018',
+    admin: ['Jun-Wang-2018'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
 </script>
-
-
-
-
 
   
 
