@@ -9,8 +9,12 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Adjustment</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Test 测试]]></title>
+    <url>%2FMyBlog%2Fzh-CN%2Fzh-CN-test%2F</url>
+    <content type="text"><![CDATA[Copy-tex test Try copy/pasting some of the text below! Here is some (\KaTeX) math: x2+y2=z2x^2+y^2=z^2x2+y2=z2 The variables are (x), (y), and (z), which are all in (\mathbb{R}^+). Q.E.D. Copy-and-paste output: Here is some (\KaTeX) math: $x^2+y^2=z^2$ The variables are (x), (y), and (z), which are all in (\mathbb{R}^+). Q.E.D. Test Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy. David LevithanWide Awake Elegant in code, simple in core source/images/test.png {% blockquote %} {% img [class names] /path/to/image [width] [height] [title text [alt text]] %} {% iframe url [width] [height] %} {% endblockquote %} Array.map1array.map(callback[, thisArg]) _.compactUnderscore.js12_.compact([0, 1, false, 2, &apos;&apos;, 3]);=&gt; [1, 2, 3] code snippet 11234var allp=$("div p");allp.attr("class",function(i,n)&#123; return Number(n)+1; &#125;); code snippet 2123allp.each(function()&#123; console.log(this); &#125;); 12345678910var allp=$("div p");allp.attr("class",function(i,n)&#123; return Number(n)+1; &#125;);``` ***```jsallp.each(function()&#123; console.log(this); &#125;);]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hexo and KaTeX]]></title>
