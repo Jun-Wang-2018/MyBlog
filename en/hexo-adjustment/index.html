@@ -456,6 +456,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/MyBlog/en/hexo-adjustment/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/MyBlog/en/hexo-adjustment/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -568,8 +581,8 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/MyBlog/en/hexo-and-katex/" rel="next" title="Hexo and KaTeX">
-                <i class="fa fa-chevron-left"></i> Hexo and KaTeX
+              <a href="/MyBlog/zh-CN/test/" rel="next" title="Test">
+                <i class="fa fa-chevron-left"></i> Test
               </a>
             
           </div>
@@ -599,7 +612,7 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
           
 
   
-    <div class="comments" id="gitalk-container">
+    <div class="comments" id="comments">
     </div>
 
   
@@ -652,7 +665,7 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
                 
                   <a href="/MyBlog/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -836,7 +849,7 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">46k</span>
+    <span title="Symbols count total">48k</span>
   
 
   
@@ -845,7 +858,7 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">42 mins.</span>
+    <span title="Reading time total">43 mins.</span>
   
 </div>
 
@@ -986,33 +999,36 @@ More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noop
 
 
   
-
-
   
-    
 
-<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
-
-
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
 
 
 
-<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
 
 <script>
-  var gitalk = new Gitalk({
-    clientID: 'ccf24a0aba2a5395ca6d',
-    clientSecret: '83781b4bb109295dee308ddc283f23b8787ad262',
-    repo: 'MyBlog',
-    owner: 'Jun-Wang-2018',
-    admin: ['Jun-Wang-2018'],
-    id: md5(location.pathname),
-    distractionFreeMode: 'true'
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
   });
-  gitalk.render('gitalk-container');
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'EmgMWebFBWLliWI2aMwDpwPC-gzGzoHsz',
+    appKey: '0CCDSc6rutpC3p5kiIEAM4tK',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
 </script>
+
+
+
 
   
 
