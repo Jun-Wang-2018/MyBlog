@@ -456,19 +456,6 @@
           
             
             
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">Comments: </span>
-                <a href="/MyBlog/en/hexo-and-katex/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/MyBlog/en/hexo-and-katex/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -613,7 +600,7 @@ Aha! <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E
           
 
   
-    <div class="comments" id="comments">
+    <div class="comments" id="gitalk-container">
     </div>
 
   
@@ -1000,36 +987,33 @@ Aha! <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E
 
 
   
+
+
   
+    
 
-<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
 
 
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  var GUEST = ['nick', 'mail', 'link'];
-  var guest = 'nick,mail,link';
-  guest = guest.split(',').filter(function(item) {
-    return GUEST.indexOf(item) > -1;
+  var gitalk = new Gitalk({
+    clientID: 'ccf24a0aba2a5395ca6d',
+    clientSecret: '83781b4bb109295dee308ddc283f23b8787ad262',
+    repo: 'MyBlog',
+    owner: 'Jun-Wang-2018',
+    admin: ['Jun-Wang-2018'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
   });
-  new Valine({
-    el: '#comments',
-    verify: false,
-    notify: false,
-    appId: 'EmgMWebFBWLliWI2aMwDpwPC-gzGzoHsz',
-    appKey: '0CCDSc6rutpC3p5kiIEAM4tK',
-    placeholder: 'Just go go',
-    avatar: 'mm',
-    meta: guest,
-    pageSize: '10' || 10,
-    visitor: false
-  });
+  gitalk.render('gitalk-container');
 </script>
-
-
-
 
   
 
