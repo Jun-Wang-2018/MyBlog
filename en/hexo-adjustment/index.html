@@ -141,7 +141,7 @@
 <meta property="og:site_name" content="∞">
 <meta property="og:description" content="Some adjustment I’ve made.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-02-24T10:24:16.407Z">
+<meta property="og:updated_time" content="2019-02-25T02:36:37.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Adjustment">
 <meta name="twitter:description" content="Some adjustment I’ve made.">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-24 18:24:16" itemprop="dateModified" datetime="2019-02-24T18:24:16+08:00">2019-02-24</time>
+                <time title="Modified: 2019-02-25 10:36:37" itemprop="dateModified" datetime="2019-02-25T10:36:37+08:00">2019-02-25</time>
               
             
           </span>
@@ -573,7 +573,10 @@ themes/next/_config.yml</p>
 <p>Add categories and tags to each post. Such as</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title:  &quot;ECDSA and Bitcoin I: Intuition About Elliptic Curve&quot;</span><br><span class="line">categories: [ECDSA and Bitcoin]</span><br><span class="line">tags: [Elliptic Curve, Math, Python Code]</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/front-matter" target="_blank" rel="noopener">hexo doc</a></p>
-<h3 id="5-generate-and-deploy"><a class="markdownIt-Anchor" href="#5-generate-and-deploy"></a> 5. Generate and deploy</h3>
+<h3 id="5-remove-lines-in-logo"><a class="markdownIt-Anchor" href="#5-remove-lines-in-logo"></a> 5. Remove lines in logo</h3>
+<p>themes/next/layout/_partials/header/brand.swig</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;custom-logo-site-title&quot;&gt;</span><br><span class="line">  &lt;a href=&quot;&#123;&#123; config.root &#125;&#125;&quot; class=&quot;brand&quot; rel=&quot;start&quot;&gt;</span><br><span class="line">    &lt;!-- &lt;span class=&quot;logo-line-before&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt; --&gt;</span><br><span class="line">    &lt;span class=&quot;site-title&quot;&gt;&#123;&#123; title &#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;!-- &lt;span class=&quot;logo-line-after&quot;&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt; --&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="6-generate-and-deploy"><a class="markdownIt-Anchor" href="#6-generate-and-deploy"></a> 6. Generate and deploy</h3>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo deploy -g</span><br></pre></td></tr></table></figure>
 <p>Don’t forget “-g”, we need to generate categories pages and tags pages before deployment.</p>
 
@@ -622,8 +625,8 @@ themes/next/_config.yml</p>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/MyBlog/en/hexo-cool-tags/" rel="prev" title="Hexo Cool Tags">
-                Hexo Cool Tags <i class="fa fa-chevron-right"></i>
+              <a href="/MyBlog/en/hexo-cool-tags/" rel="prev" title="Hexo Cool Stuffs">
+                Hexo Cool Stuffs <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -726,9 +729,7 @@ themes/next/_config.yml</p>
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -863,7 +864,7 @@ themes/next/_config.yml</p>
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#migrate-files-from-jekyll"><span class="nav-text"> Migrate files from Jekyll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image-align-center"><span class="nav-text"> Image align center</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-images-side-by-side"><span class="nav-text"> Two images side by side</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#disqus"><span class="nav-text"> Disqus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-and-tags"><span class="nav-text"> Categories and Tags</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-categories-page"><span class="nav-text"> 1. Categories page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-tags-page"><span class="nav-text"> 2. Tags page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-menu-settings"><span class="nav-text"> 3. Menu Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-font-matter"><span class="nav-text"> 4. Font Matter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-generate-and-deploy"><span class="nav-text"> 5. Generate and deploy</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#migrate-files-from-jekyll"><span class="nav-text"> Migrate files from Jekyll</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#image-align-center"><span class="nav-text"> Image align center</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#two-images-side-by-side"><span class="nav-text"> Two images side by side</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#disqus"><span class="nav-text"> Disqus</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#categories-and-tags"><span class="nav-text"> Categories and Tags</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-categories-page"><span class="nav-text"> 1. Categories page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-tags-page"><span class="nav-text"> 2. Tags page</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-menu-settings"><span class="nav-text"> 3. Menu Settings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-font-matter"><span class="nav-text"> 4. Font Matter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-remove-lines-in-logo"><span class="nav-text"> 5. Remove lines in logo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-generate-and-deploy"><span class="nav-text"> 6. Generate and deploy</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -902,7 +903,7 @@ themes/next/_config.yml</p>
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">54k</span>
+    <span title="Symbols count total">57k</span>
   
 
   
@@ -911,7 +912,7 @@ themes/next/_config.yml</p>
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">49 mins.</span>
+    <span title="Reading time total">51 mins.</span>
   
 </div>
 
