@@ -143,7 +143,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://jun-wang-2018.github.io/MyBlog/images/LantingXuShenLongBen.png">
 <meta property="og:image" content="https://jun-wang-2018.github.io/MyBlog/images/BackslashEscapes.png">
-<meta property="og:updated_time" content="2019-02-25T13:23:16.461Z">
+<meta property="og:updated_time" content="2019-02-26T10:51:10.891Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo Cool Staffs II">
 <meta name="twitter:description" content="Other cool stuffs from Theme NexT Tag doc, Hexo Tag Plugins doc and GitHub Markdown doc.  Gist {% gist gist_id [filename] %} {% gist b4eb2aaa59af3fbdf1ae1f7ab979b6ae modular_inverse %}">
@@ -445,12 +445,24 @@
                 
               
 
-              <time title="Created: 2019-02-25 20:10:33 / Modified: 21:23:16" itemprop="dateCreated datePublished" datetime="2019-02-25T20:10:33+08:00">2019-02-25</time>
+              <time title="Created: 2019-02-25 20:10:33" itemprop="dateCreated datePublished" datetime="2019-02-25T20:10:33+08:00">2019-02-25</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-02-26 18:51:10" itemprop="dateModified" datetime="2019-02-26T18:51:10+08:00">2019-02-26</time>
               
             
           </span>
@@ -580,7 +592,69 @@ content // class is right or left
 {% vimeo video_id [width] [height] %}
 </code></pre>
 <h3 id="tabs"><a class="markdownIt-Anchor" href="#tabs"></a> Tabs</h3>
+<pre><code>{% tabs First unique name %}
+&lt;!-- tab --&gt;
+**This is Tab 1.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 2.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 3.**
+&lt;!-- endtab --&gt;
+{% endtabs %}
+</code></pre>
 <div class="tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#first-unique-name-1">First unique name 1</a></li><li class="tab"><a href="#first-unique-name-2">First unique name 2</a></li><li class="tab"><a href="#first-unique-name-3">First unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+<pre><code>Permalink for &gt; [Tab one](#tab-one).
+Permalink for &gt; [Tab one 1](#tab-one-1).
+Permalink for &gt; [Tab one 2](#tab-one-2).
+Permalink for &gt; [Tab one 3](#tab-one-3).
+
+Permalink for &gt; [Tab two](#tab-two).
+Permalink for &gt; [Tab two 1](#tab-two-1).
+Permalink for &gt; [Tab two 2](#tab-two-2).
+Permalink for &gt; [Tab two 3](#tab-two-3).
+
+{% tabs Tab one %}
+&lt;!-- tab --&gt;
+**This is Tab 1.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 2.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 3.**
+&lt;!-- endtab --&gt;
+{% endtabs %}
+
+{% tabs Tab two %}
+&lt;!-- tab --&gt;
+**This is Tab 1.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 2.**
+&lt;!-- endtab --&gt;
+
+&lt;!-- tab --&gt;
+**This is Tab 3.**
+&lt;!-- endtab --&gt;
+{% endtabs %}
+</code></pre>
+<p>Permalink for &gt; <a href="#tab-one">Tab one</a>.<br>
+Permalink for &gt; <a href="#tab-one-1">Tab one 1</a>.<br>
+Permalink for &gt; <a href="#tab-one-2">Tab one 2</a>.<br>
+Permalink for &gt; <a href="#tab-one-3">Tab one 3</a>.</p>
+<p>Permalink for &gt; <a href="#tab-two">Tab two</a>.<br>
+Permalink for &gt; <a href="#tab-two-1">Tab two 1</a>.<br>
+Permalink for &gt; <a href="#tab-two-2">Tab two 2</a>.<br>
+Permalink for &gt; <a href="#tab-two-3">Tab two 3</a>.</p>
+<div class="tabs" id="tab-one"><ul class="nav-tabs"><li class="tab active"><a href="#tab-one-1">Tab one 1</a></li><li class="tab"><a href="#tab-one-2">Tab one 2</a></li><li class="tab"><a href="#tab-one-3">Tab one 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-one-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="tab-one-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="tab-one-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+<div class="tabs" id="tab-two"><ul class="nav-tabs"><li class="tab active"><a href="#tab-two-1">Tab two 1</a></li><li class="tab"><a href="#tab-two-2">Tab two 2</a></li><li class="tab"><a href="#tab-two-3">Tab two 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tab-two-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="tab-two-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="tab-two-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
 <h3 id="labels"><a class="markdownIt-Anchor" href="#labels"></a> Labels</h3>
 <pre><code>Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua.
 
@@ -949,7 +1023,7 @@ Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">59k</span>
+    <span title="Symbols count total">60k</span>
   
 
   
@@ -958,7 +1032,7 @@ Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">54 mins.</span>
+    <span title="Reading time total">55 mins.</span>
   
 </div>
 
