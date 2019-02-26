@@ -657,7 +657,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-25 20:14:07" itemprop="dateModified" datetime="2019-02-25T20:14:07+08:00">2019-02-25</time>
+                <time title="Modified: 2019-02-26 07:48:45" itemprop="dateModified" datetime="2019-02-26T07:48:45+08:00">2019-02-26</time>
               
             
           </span>
@@ -751,14 +751,6 @@ Welcome to [Hexo!](https://hexo.io)
 </code></pre>
 <div class="note default">
             <h4 id="default-header"><a class="markdownIt-Anchor" href="#default-header"></a> Default Header</h4><p>Welcome to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
-          </div>
-<pre><code>{% note primary %}
-#### Primary Header
-**Welcome** to [Hexo!](https://hexo.io)
-{% endnote %}
-</code></pre>
-<div class="note primary">
-            <h4 id="primary-header"><a class="markdownIt-Anchor" href="#primary-header"></a> Primary Header</h4><p><strong>Welcome</strong> to <a href="https://hexo.io" target="_blank" rel="noopener">Hexo!</a></p>
           </div>
           <!--noindex-->
           
@@ -885,7 +877,7 @@ Welcome to [Hexo!](https://hexo.io)
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-02-26 00:30:05" itemprop="dateModified" datetime="2019-02-26T00:30:05+08:00">2019-02-26</time>
+                <time title="Modified: 2019-02-26 07:48:13" itemprop="dateModified" datetime="2019-02-26T07:48:13+08:00">2019-02-26</time>
               
             
           </span>
@@ -962,9 +954,15 @@ Welcome to [Hexo!](https://hexo.io)
 
       
         
-          <p>Before we make any ajustment we’d better backup our theme.</p>
-<h2 id="backup-personal-theme"><a class="markdownIt-Anchor" href="#backup-personal-theme"></a> Backup personal theme</h2>
-<h3 id="fork-the-origial-theme-next"><a class="markdownIt-Anchor" href="#fork-the-origial-theme-next"></a> Fork the origial theme NexT</h3>
+          <p>Some adjustment I’ve made.</p>
+<h3 id="migrate-files-from-jekyll"><a class="markdownIt-Anchor" href="#migrate-files-from-jekyll"></a> Migrate files from Jekyll</h3>
+<p>Move all files in the Jekyll <code>_posts</code> folder to the <code>source/_posts</code> folder.<br>
+Modify the new_post_name setting in <code>_config.yml</code>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">new_post_name: :year-:month-:day-:title.md</span><br></pre></td></tr></table></figure>
+<h3 id="image-align-center"><a class="markdownIt-Anchor" href="#image-align-center"></a> Image align center</h3>
+<p>themes\next\source\css_schemes\Mist_posts-expanded.styl</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.post-body img &#123; margin: auto; &#125;</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://github.com/iissnan/hexo-theme-next/issues/47" target="_blank" rel="noopener">ref</a></p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -2460,7 +2458,7 @@ More info: <a href="http://www.secg.org/SEC1-Ver-1.0.pdf" target="_blank" rel="n
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="Symbols count total">60k</span>
+    <span title="Symbols count total">59k</span>
   
 
   
@@ -2469,7 +2467,7 @@ More info: <a href="http://www.secg.org/SEC1-Ver-1.0.pdf" target="_blank" rel="n
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="Reading time total">55 mins.</span>
+    <span title="Reading time total">54 mins.</span>
   
 </div>
 
