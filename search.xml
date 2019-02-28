@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ECDSA and Bitcoin III: Private Key, Public Key and Address]]></title>
+    <url>%2FMyBlog%2Fen%2FECDSA-and-Bitcoin-III%2F</url>
+    <content type="text"><![CDATA[Try it you self. bitaddress.org]]></content>
+      <categories>
+        <category>ECDSA and Bitcoin</category>
+      </categories>
+      <tags>
+        <tag>Bitcoin</tag>
+        <tag>Python</tag>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo Cool Staffs II]]></title>
     <url>%2FMyBlog%2Fen%2FHexo-Cool-Staffs-II%2F</url>
     <content type="text"><![CDATA[Other cool stuffs from Theme NexT Tag doc, Hexo Tag Plugins doc and GitHub Markdown doc. Gist {% gist gist_id [filename] %} {% gist b4eb2aaa59af3fbdf1ae1f7ab979b6ae modular_inverse %} Jsfiddle {% jsfiddle shorttag [tabs] [skin] [width] [height] %} {% jsfiddle Jun_Wang/0c5L37vq js,html,css,result dark %} Pullquote {% pullquote [class] %} content // class is right or left {% endpullquote %} Exp: {% pullquote right %} {% cq %} 王羲之《兰亭集序神龙本》（冯承素摹）{% endcq %} {% endpullquote %} 王羲之《兰亭集序神龙本》（冯承素摹） 永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹，又有清流激湍，映带左右，引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。 是日也，天朗气清，惠风和畅。仰观宇宙之大，俯察品类之盛，所以游目骋怀，足以极视听之娱，信可乐也。 夫人之相与，俯仰一世。或取诸怀抱，悟言一室之内；或因寄所托，放浪形骸之外。虽趣舍万殊，静躁不同，当其欣于所遇，暂得于己，怏然自足，不知老之将至；及其所之既倦，情随事迁，感慨系之矣。向之所欣，俯仰之间，已为陈迹，犹不能不以之兴怀，况修短随化，终期于尽！古人云：“死生亦大矣。”岂不痛哉！ 每览昔人兴感之由，若合一契，未尝不临文嗟悼，不能喻之于怀。固知一死生为虚诞，齐彭殇为妄作。后之视今，亦犹今之视昔，悲夫！故列叙时人，录其所述，虽世殊事异，所以兴怀，其致一也。后之览者，亦将有感于斯文。 Images {% img [class names] /path/to/image [width] [height] [title text [alt text]] %} {% img /images/lantingjixu.png 800 200 %} Postlink {% post_link filename [optional text] %} {% post_link hexo-adjustment 'the previous post' %} the previous post Iframe {% iframe url [width] [height] %} {% iframe https://jun-wang-2018.github.io/MyBlog/en/Hexo-Cool-Staffs-II/ 100% 50% %} Link {% link text url [external] [title] %} {% link "open a new window" https://hexo.io/docs/tag-plugins external "Hexo doc" %} open a new window YouTube and Viemo {% youtube video_id %} {% vimeo video_id [width] [height] %} Tabs {% tabs First unique name %} &lt;!-- tab --&gt; **This is Tab 1.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 2.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 3.** &lt;!-- endtab --&gt; {% endtabs %} First unique name 1First unique name 2First unique name 3This is Tab 1.This is Tab 2.This is Tab 3. Permalink for &gt; [Tab one](#tab-one). Permalink for &gt; [Tab one 1](#tab-one-1). Permalink for &gt; [Tab one 2](#tab-one-2). Permalink for &gt; [Tab one 3](#tab-one-3). Permalink for &gt; [Tab two](#tab-two). Permalink for &gt; [Tab two 1](#tab-two-1). Permalink for &gt; [Tab two 2](#tab-two-2). Permalink for &gt; [Tab two 3](#tab-two-3). {% tabs Tab one %} &lt;!-- tab --&gt; **This is Tab 1.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 2.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 3.** &lt;!-- endtab --&gt; {% endtabs %} {% tabs Tab two %} &lt;!-- tab --&gt; **This is Tab 1.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 2.** &lt;!-- endtab --&gt; &lt;!-- tab --&gt; **This is Tab 3.** &lt;!-- endtab --&gt; {% endtabs %} Permalink for &gt; Tab one. Permalink for &gt; Tab one 1. Permalink for &gt; Tab one 2. Permalink for &gt; Tab one 3. Permalink for &gt; Tab two. Permalink for &gt; Tab two 1. Permalink for &gt; Tab two 2. Permalink for &gt; Tab two 3. Tab one 1Tab one 2Tab one 3This is Tab 1.This is Tab 2.This is Tab 3. Tab two 1Tab two 2Tab two 3This is Tab 1.This is Tab 2.This is Tab 3. Labels Lorem {% label @ipsum %} {% label primary@dolor sit %} amet, consectetur {% label success@adipiscing elit, %} sed {% label info@do eiusmod %} tempor incididunt ut labore et dolore magna aliqua. Ut enim *{% label warning @ad %}* minim veniam, quis **{% label danger@nostrud %}** exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}~~ &lt;mark&gt;esse&lt;/mark&gt; cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Buttons &lt;p&gt;{% btn #, Text & Large Icon, home fa-fw fa-lg %} {% btn #, Text & Large Icon & Title, home fa-fw fa-lg, Title %}&lt;/p&gt; Text & Large Icon Text & Large Icon & Title &lt;div class=&quot;text-center&quot;&gt;&lt;div&gt;{% btn #,, header %}{% btn #,, edge %}{% btn #,, times %}{% btn #,, circle-o %}&lt;/div&gt; &lt;div&gt;{% btn #,, italic %}{% btn #,, scribd %}&lt;/div&gt; &lt;div&gt;{% btn #,, google %}{% btn #,, chrome %}{% btn #,, opera %}{% btn #,, diamond fa-rotate-270 %}&lt;/div&gt;&lt;/div&gt; &lt;div class=&quot;text-center&quot;&gt;{% btn https://github.com/theme-next/hexo-theme-next, NexT, github fa-fw fa-lg, NexT source code %}&lt;/div&gt; NexT Relative link to a post {% post_link hexo-adjustment 'Hexo Adjustment' %} Hexo Adjustment Task list - [x] @mentions, #refs, [links](), **formatting**, and &lt;del&gt;tags&lt;/del&gt; supported - [x] list syntax required (any unordered or ordered list supported) - [x] this is a complete item - [ ] this is an incomplete item @mentions, #refs, links, formatting, and tags supported list syntax required (any unordered or ordered list supported) this is a complete item this is an incomplete item Requirement:1$ npm install markdown-it-task-lists --saveThen, copy and paste the following snippet to _config.yml12345678910111213markdown_it_plus: highlight: true html: true xhtmlOut: true breaks: true langPrefix: linkify: true typographer: quotes: “”‘’ plugins: - plugin: name: markdown-it-task-lists enable: trueMore info: ref1, ref2 Other references: 1, 2, 3, 4, 5]]></content>
@@ -91,8 +104,7 @@
         <category>ECDSA and Bitcoin</category>
       </categories>
       <tags>
-        <tag>secp256k1</tag>
-        <tag>Bitcoin parameters</tag>
+        <tag>Bitcoin</tag>
       </tags>
   </entry>
   <entry>
@@ -103,9 +115,9 @@
         <category>ECDSA and Bitcoin</category>
       </categories>
       <tags>
-        <tag>Elliptic Curve</tag>
+        <tag>Bitcoin</tag>
+        <tag>Python</tag>
         <tag>Math</tag>
-        <tag>Python Code</tag>
       </tags>
   </entry>
 </search>
