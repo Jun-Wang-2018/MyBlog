@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[ECDSA and Bitcoin III: Private Key, Public Key and Address]]></title>
     <url>%2FMyBlog%2Fen%2FECDSA-and-Bitcoin-III%2F</url>
-    <content type="text"><![CDATA[Try it you self. bitaddress.org]]></content>
+    <content type="text"><![CDATA[Try it you self. An example of small numbers. Small Parametersa = 1; b = 1; P = 23;x1 = 3; y1 = 10; G = [x1,y1];N = 27; Bitcoin Bitcoin Parametersa =0; b = 7; P = 2256−232−29−28−27−26−24−12^{256} - 2^{32} - 2^{9} - 2^{8} - 2^{7} - 2^{6} - 2^{4} -12256−232−29−28−27−26−24−1;x1 = 79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798y1 = 483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8G = [x1,y1];N = FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141 bitaddress.org]]></content>
       <categories>
         <category>ECDSA and Bitcoin</category>
       </categories>
