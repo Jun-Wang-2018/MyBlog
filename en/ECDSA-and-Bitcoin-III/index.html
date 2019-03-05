@@ -141,7 +141,7 @@
 <meta property="og:site_name" content="∞">
 <meta property="og:description" content="If we have an elliptic curve(defined by aaa and bbb), a prime(PPP), an basepoint G(x1,y1)G(x1,y1)G(x1,y1) and an order of this basepoint(NNN), then we can choose a number(say nnn) and calculate n∗Gn*G">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-05T13:25:23.271Z">
+<meta property="og:updated_time" content="2019-03-05T13:39:16.703Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECDSA and Bitcoin III: Private Key, Public Key and Address">
 <meta name="twitter:description" content="If we have an elliptic curve(defined by aaa and bbb), a prime(PPP), an basepoint G(x1,y1)G(x1,y1)G(x1,y1) and an order of this basepoint(NNN), then we can choose a number(say nnn) and calculate n∗Gn*G">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-05 21:25:23" itemprop="dateModified" datetime="2019-03-05T21:25:23+08:00">2019-03-05</time>
+                <time title="Modified: 2019-03-05 21:39:16" itemprop="dateModified" datetime="2019-03-05T21:39:16+08:00">2019-03-05</time>
               
             
           </span>
@@ -560,10 +560,10 @@
           </div>
 <p>In the real world, the private key still needs to be converted to Wallet Import Format(WIF). Also public key needs to be converted to address.</p>
 <h3 id="2-from-private-key-to-wif"><a class="markdownIt-Anchor" href="#2-from-private-key-to-wif"></a> 2. From private key to WIF</h3>
-<p>Still, suppose we’ve chosen a private key:</p>
+<p>Suppose we’ve chosen a private key:</p>
 <pre><code>59748189462850000000000000000000000000000000000000000000000000000000000000000
 </code></pre>
-<p>2.1 It’s hexdecimal form:</p>
+<p>2.1 Its hexdecimal form:</p>
 <pre><code>Private key(hex): PK0 = 841846de7afbe32ee7ded837872c6e0825db095275b8afed0000000000000000
 </code></pre>
 <p>2.2 Add “0x80” to the head of PK0:</p>
@@ -591,7 +591,7 @@
 <pre><code>WIF = 5JpTmRPSNsrt2EptGiR2pcJ7xZGQeCVvTRfpQr4XD4om8dsB8Ew
 </code></pre>
 <h3 id="3-from-public-key-to-address"><a class="markdownIt-Anchor" href="#3-from-public-key-to-address"></a> 3. From public key to address</h3>
-<p>Still, suppose we’ve chosen a private key:</p>
+<p>Still, suppose we’ve chosen the private key:</p>
 <pre><code>59748189462850000000000000000000000000000000000000000000000000000000000000000
 </code></pre>
 <p>3.1 After Elliptic Curve Multiplication we get:</p>
@@ -609,7 +609,7 @@
 <p>3.4 RIPEMD-160(UK2):</p>
 <pre><code>UK3 = aa3dc7fda0e233b71a53938e7ae42bf5a583fc8c
 </code></pre>
-<p>3.5 Adding “0x00” to the front of UK3:</p>
+<p>3.5 Adding “0x00” to the head of UK3:</p>
 <pre><code>UK4 = 00aa3dc7fda0e233b71a53938e7ae42bf5a583fc8c
 </code></pre>
 <div class="note ">
@@ -621,7 +621,7 @@
 <p>3.7 SHA-256(UK5):</p>
 <pre><code>UK6 = 6be6d3cfdb5464f3aca1777400be94dc500a8bb84a5cf25d968721c7a850d2cf
 </code></pre>
-<p>3.8 Checksum(First 4 bytes/8 characters of UK6):</p>
+<p>3.8 Checksum(first 8 hexadecimal digits/4 bytes of UK6):</p>
 <pre><code>6be6d3cf
 </code></pre>
 <p>3.9 Add Checksum to the tail of UK4:</p>
