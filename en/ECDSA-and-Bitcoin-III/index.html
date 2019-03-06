@@ -141,7 +141,7 @@
 <meta property="og:site_name" content="∞">
 <meta property="og:description" content="If we have an elliptic curve(defined by aaa and bbb), a prime(PPP), an basepoint G(x1,y1)G(x1,y1)G(x1,y1) and an order of this basepoint(NNN), then we can choose a number(say nnn) and calculate n∗Gn*G">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-06T00:06:43.902Z">
+<meta property="og:updated_time" content="2019-03-06T14:07:32.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECDSA and Bitcoin III: Private Key, Public Key and Address">
 <meta name="twitter:description" content="If we have an elliptic curve(defined by aaa and bbb), a prime(PPP), an basepoint G(x1,y1)G(x1,y1)G(x1,y1) and an order of this basepoint(NNN), then we can choose a number(say nnn) and calculate n∗Gn*G">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-03-06 08:06:43" itemprop="dateModified" datetime="2019-03-06T08:06:43+08:00">2019-03-06</time>
+                <time title="Modified: 2019-03-06 22:07:32" itemprop="dateModified" datetime="2019-03-06T22:07:32+08:00">2019-03-06</time>
               
             
           </span>
@@ -598,7 +598,7 @@ Compared to <a href="https://en.wikipedia.org/wiki/Base64" target="_blank" rel="
 <pre><code>59748189462850000000000000000000000000000000000000000000000000000000000000000
 </code></pre>
 <p>3.1 After Elliptic Curve Multiplication we get:</p>
-<pre><code>Private key(hex): UK0 = 3a56bd64573c28050bfe202c57e56b46c63744a253d1430e2b737876fa883b19,73c2f565444dc62151562993ff4b566c826010befb289fa2fc749293266066c0
+<pre><code>Public key(hex): UK0 = 3a56bd64573c28050bfe202c57e56b46c63744a253d1430e2b737876fa883b19,73c2f565444dc62151562993ff4b566c826010befb289fa2fc749293266066c0
 </code></pre>
 <p>3.2 Add “0x40” to the head of UK0:</p>
 <pre><code>UK1 = 043a56bd64573c28050bfe202c57e56b46c63744a253d1430e2b737876fa883b1973c2f565444dc62151562993ff4b566c826010befb289fa2fc749293266066c0
@@ -638,8 +638,15 @@ Compared to <a href="https://en.wikipedia.org/wiki/Base64" target="_blank" rel="
 <div class="note ">
             <iframe src="https://jun-wang-2018.github.io/keyGenerator/" width="100%" height="800" frameborder="0" allowfullscreen></iframe>
           </div>
+<p><a href="https://jun-wang-2018.github.io/keyGenerator/" target="_blank">Open it in a new tab</a></p>
 <h3 id="5-python-gist"><a class="markdownIt-Anchor" href="#5-python-gist"></a> 5. Python gist</h3>
-<p>More info: <a href="https://github.com/Destiner/blocksmith" target="_blank" rel="noopener">blocksmith</a>, <a href="https://github.com/warner/python-ecdsa" target="_blank" rel="noopener">python-ecdsa</a></p>
+<div class="note ">
+            <h4 id="from-private-key-to-wif"><a class="markdownIt-Anchor" href="#from-private-key-to-wif"></a> From private key to WIF</h4><script src="//gist.github.com/3105e29e0d61ecf88530c092199371a7.js?file=Bitcoin_from_private_key_to_WIF.py"></script>
+          </div>
+<div class="note ">
+            <h4 id="from-public-key-to-address"><a class="markdownIt-Anchor" href="#from-public-key-to-address"></a> From public key to address</h4><script src="//gist.github.com/35b687f8c6f726c8432508d68dc65d46.js?file=Bitcoin_from_public_key_to_address.py"></script>
+          </div>
+<p>More info: <a href="https://medium.freecodecamp.org/how-to-create-a-bitcoin-wallet-address-from-a-private-key-eca3ddd9c05f" target="_blank" rel="noopener">freecodecamp</a>, <a href="https://github.com/Destiner/blocksmith" target="_blank" rel="noopener">blocksmith</a>, <a href="https://github.com/warner/python-ecdsa" target="_blank" rel="noopener">python-ecdsa</a>, <a href="https://docs.python.org/2/library/hashlib.html" target="_blank" rel="noopener">Python doc</a></p>
 
       
     </div>
@@ -921,7 +928,7 @@ Compared to <a href="https://en.wikipedia.org/wiki/Base64" target="_blank" rel="
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#an-example"><span class="nav-text"> An example</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#parameters"><span class="nav-text"> Parameters</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bitcoin"><span class="nav-text"> Bitcoin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-private-key-and-public-key"><span class="nav-text"> 1. Private key and public key</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#parameters"><span class="nav-text"> Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-gist"><span class="nav-text"> Python Gist</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-from-private-key-to-wif"><span class="nav-text"> 2. From private key to WIF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-from-public-key-to-address"><span class="nav-text"> 3. From public key to address</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-try-it-you-self"><span class="nav-text"> 4. Try it you self</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-python-gist"><span class="nav-text"> 5. Python gist</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#an-example"><span class="nav-text"> An example</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#parameters"><span class="nav-text"> Parameters</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#bitcoin"><span class="nav-text"> Bitcoin</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-private-key-and-public-key"><span class="nav-text"> 1. Private key and public key</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#parameters"><span class="nav-text"> Parameters</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-gist"><span class="nav-text"> Python Gist</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-from-private-key-to-wif"><span class="nav-text"> 2. From private key to WIF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-from-public-key-to-address"><span class="nav-text"> 3. From public key to address</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-try-it-you-self"><span class="nav-text"> 4. Try it you self</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-python-gist"><span class="nav-text"> 5. Python gist</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#from-private-key-to-wif"><span class="nav-text"> From private key to WIF</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#from-public-key-to-address"><span class="nav-text"> From public key to address</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
