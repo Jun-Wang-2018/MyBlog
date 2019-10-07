@@ -6,7 +6,7 @@
   <link href="/MyBlog/atom.xml" rel="self"/>
   
   <link href="https://jun-wang-2018.github.io/MyBlog/"/>
-  <updated>2019-03-06T14:07:32.858Z</updated>
+  <updated>2019-10-07T02:25:59.176Z</updated>
   <id>https://jun-wang-2018.github.io/MyBlog/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Notes for QUANTUM COMPUTING: Chp #2 Single-Qubit Quantum Systems</title>
+    <link href="https://jun-wang-2018.github.io/MyBlog/en/Notes-for-QUANTUM-COMPUTING-Chp-2-Single-Qubit-Quantum-Systems/"/>
+    <id>https://jun-wang-2018.github.io/MyBlog/en/Notes-for-QUANTUM-COMPUTING-Chp-2-Single-Qubit-Quantum-Systems/</id>
+    <published>2019-10-07T02:12:24.000Z</published>
+    <updated>2019-10-07T02:25:59.176Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="21-the-quantum-mechanics-of-photon-polarization"><a class="markdownIt-Anchor" href="#21-the-quantum-mechanics-of-photon-polarization"></a> 2.1 The Quantum Mechanics of Photon Polarization</h2><h3 id="211-a-simple-experiment"><a class="markdownIt-Anchor" href="#211-a-simple-experiment"></a> 2.1.1 A Simple Experiment</h3><h3 id="212-a-quantum-explanantion"><a class="markdownIt-Anchor" href="#212-a-quantum-explanantion"></a> 2.1.2 A Quantum Explanantion</h3><h2 id="22-single-quantum-bits"><a class="markdownIt-Anchor" href="#22-single-quantum-bits"></a> 2.2 Single Quantum bits</h2><h2 id="23-single-qubit-measurement"><a class="markdownIt-Anchor" href="#23-single-qubit-measurement"></a> 2.3 Single-Qubit Measurement</h2><h2 id="24-a-quantum-key-distribution-protocol"><a class="markdownIt-Anchor" href="#24-a-quantum-key-distribution-protocol"></a> 2.4 A Quantum Key Distribution Protocol</h2><h2 id="25-the-state-space-of-a-single-qubit-system"><a class="markdownIt-Anchor" href="#25-the-state-space-of-a-single-qubit-system"></a> 2.5 The State Space of a Single-Qubit System</h2><h3 id="251-relative-phases-versus-global-phases"><a class="markdownIt-Anchor" href="#251-relative-phases-versus-global-phases"></a> 2.5.1 Relative Phases versus Global Phases</h3><h3 id="252-geometric-views-of-the-state-space-of-a-single-qubit"><a class="markdownIt-Anchor" href="#252-geometric-views-of-the-state-space-of-a-single-qubit"></a> 2.5.2 Geometric Views of the State Space of a Single Qubit</h3><h3 id="253-comments-on-general-quantum-state-spaces"><a class="markdownIt-Anchor" href="#253-comments-on-general-quantum-state-spaces"></a> 2.5.3 Comments on General Quantum State Spaces</h3><h2 id="26-reference"><a class="markdownIt-Anchor" href="#26-reference"></a> 2.6 Reference</h2><h2 id="27-exercises"><a class="markdownIt-Anchor" href="#27-exercises"></a> 2.7 Exercises</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;21-the-quantum-mechanics-of-photon-polarization&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#21-the-quantum-mechanics-of-photon-polarization
+      
+    
+    </summary>
+    
+    
+      <category term="Notes for QUANTUM COMPUTING" scheme="https://jun-wang-2018.github.io/MyBlog/tags/Notes-for-QUANTUM-COMPUTING/"/>
+    
+  </entry>
   
   <entry>
     <title>ECDSA and Bitcoin III: Private Key, Public Key and Address</title>
