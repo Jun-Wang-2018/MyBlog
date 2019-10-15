@@ -490,6 +490,19 @@
           
             
             
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/MyBlog/en/Hexo-Cool-Staffs-II/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="en/Hexo-Cool-Staffs-II/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -759,6 +772,13 @@ Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
 
   
 
@@ -1167,6 +1187,47 @@ Duis aute irure dolor in reprehenderit in voluptate ~~{% label default @velit %}
 
 
   
+  
+  <script id="dsq-count-scr" src="https://myblog-ip5jfdudvn.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://jun-wang-2018.github.io/MyBlog/en/Hexo-Cool-Staffs-II/";
+    this.page.identifier = "en/Hexo-Cool-Staffs-II/";
+    this.page.title = 'Hexo Cool Staffs II';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://myblog-ip5jfdudvn.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    $(function() {
+      var offsetTop = $('#comments').offset().top - $(window).height();
+      if (offsetTop <= 0) {
+        // load directly when there's no a scrollbar
+        loadComments();
+      } else {
+        $(window).on('scroll.disqus_scroll', function() {
+          // offsetTop may changes because of manually resizing browser window or lazy loading images.
+          var offsetTop = $('#comments').offset().top - $(window).height();
+          var scrollTop = $(window).scrollTop();
+
+          // pre-load comments a bit? (margin or anything else)
+          if (offsetTop - scrollTop < 60) {
+            $(window).off('.disqus_scroll');
+            loadComments();
+          }
+        });
+      }
+    });
+  
+</script>
+
+
+
 
 
   
